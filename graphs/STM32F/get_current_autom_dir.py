@@ -67,67 +67,100 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 		if start_pic : 
 			run_i += data_i[i]
 			run_count += 1 
-	row = ['intensity', 'runtime', 'timestamp']
+	row = ['intensity', 'runtime', 'timestamp', 'energy']
 
 
-	'''col = ["CF DR 24", "CF DC 24","CC DR 24","CC DC 24",
-		   "CF DR 48", "CF DC 48","CC DR 48","CC DC 48",
-		   "CF DR 72", "CF DC 72","CC DR 72","CC DC 72"]'''
 	col = []
-
+	lines = []
 	with open('{}.txt'.format(param_col)) as f:
-		lines = f.readlines()
 		
+		for l in f : 
+			lines.append(l.replace('\n', ''))
+		nb_f = int(lines[0])
+		nb_ex = int(lines[2])
+		#extract the frequencies and the execution types 
+		f = lines[1].split(' ')
+		if len(f) != nb_f: 
+			print("wrong number of frequency")
+			print(f)
+			exit() 
+		ex = lines[3].split(' ')
+		if len(ex) != nb_ex:
+			print("wrong number of execution types")
+			print(ex)
+			exit()
+		tab_f = []
 
-	
-	for n in lines : 
-		col.append(n.replace('\n', ''))
-	print(col)
-	#remove the reset pic and add the data in the dataframe 
-	df = pd.DataFrame([intensity_tab[1:len(intensity_tab)], duration_tab[1:len(duration_tab)], time_tab[1:len(time_tab)]], index = row, columns = col)
-	return df
+		#fusion of the two tabs 
+		'''for n in range (nb_ex):
+			f2 = f.copy()
+			for i in range (nb_f):
+				f2[i] = f2[i] + ' ' + ex[n]
+			tab_f.append(f2) '''
+		#remove the reset pic and add the data in the dataframe 
+		intensity_tab = intensity_tab[1:len(intensity_tab)]
+		duration_tab = duration_tab[1:len(duration_tab)]
+		time_tab = time_tab[1:len(time_tab)]
+		tab_i = []
+		tab_d = []
+		tab_t = []
+		df = []
+		#split the different executions 
+		for n in range (nb_ex): 
+			tab_i = [intensity_tab[i] for i in range (len(intensity_tab)) if i % nb_ex == n]
+			tab_d = [duration_tab[i] for i in range (len(duration_tab)) if i % nb_ex == n]
+			tab_t = [time_tab[i] for i in range (len(time_tab)) if i % nb_ex == n]
+			tab_e = [3.3*tab_d[i]*tab_i[i] for i in range (len(tab_i))]
+			df.append(pd.DataFrame([tab_i, tab_d, tab_t, tab_e], index = row, columns = f))
+
+	return (df, ex)
 
 def main() : 
-	#clear the processing directory 
 
 
 	#take arguments (graph, run treshold and sleep treshhold)	
 	rep_name = sys.argv[1]
 	param_col = sys.argv[2]
 	if len(sys.argv) > 3 : 
-		i_treshold = sys.argv[3]
-		t_treshold = sys.argv[4]
+		i_treshold = int(sys.argv[3])
+		t_treshold = float(sys.argv[4])
 	else :
 		i_treshold = 2000
 		t_treshold = 0.001
 	#dest_name = sys.argv[2]
-	#freq = sys.argv[3]
+	#graph = sys.argv[3]
 	intensity = []
 	time = []
-	freq = []
+	graph = []
 
-	#Copy the graph into the processing directory
+	#Copy the graphs into the processing directory
 	file_list = os.listdir(rep_name)
 	os.system("cd {} && mkdir p".format(rep_name))
-	for f in file_list: 
-		freq.append(f)
-		tab = create_tabs(f, rep_name)
-		intensity.append(tab[0])
-		time.append(tab[1])
+	for f in file_list:
+		if f[-5:len(f)] == ".stpm" : 
+			graph.append(f)
+			tab = create_tabs(f, rep_name)
+			intensity.append(tab[0])
+			time.append(tab[1])
 	os.system('cd {} && rmdir p'.format(rep_name))	
 	path = './{}/{}.xlsx'.format(rep_name, rep_name)
+
+	#create the excel file 
 	for i in range (len(intensity)) : 
-		sheet = "{}".format(freq[i].removesuffix(".stpm"))
-		print("get current of : ", freq[i])
-		df = get_current(intensity[i], time[i], param_col, i_treshold, t_treshold)
-		try :
-			book = openpyxl.load_workbook(path)
-			book.create_sheet(sheet)
-			writer = pd.ExcelWriter(path, engine='openpyxl', mode='a', if_sheet_exists="overlay")
-			df.to_excel(writer, sheet ) 
-			writer.close()
-		except : 
-			df.to_excel(path, sheet_name = sheet)
+
+		(df, ex) = get_current(intensity[i], time[i], param_col, i_treshold, t_treshold)
+		for j in range(len(ex)) : 
+			sheet = "{} {}".format(graph[i].removesuffix(".stpm"), ex[j])
+			print("creating the sheet : ", sheet)
+			df[j].to_csv(rep_name+'/'+sheet+'.csv', sep='\t')
+			try :
+				book = openpyxl.load_workbook(path)
+				book.create_sheet(sheet)
+				writer = pd.ExcelWriter(path, engine='openpyxl', mode='a', if_sheet_exists="overlay")
+				df[j].to_excel(writer, sheet ) 
+				writer.close()
+			except : 
+				df[j].to_excel(path, sheet_name = sheet)
 
 
 main()

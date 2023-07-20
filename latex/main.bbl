@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{mem_alloc}
+Zhishen Zhang, Yuwen Shen, Binqi Sun, Tomasz Kloda, and Marco Caccamo.
+\newblock Memory allocation for low-power real-time embedded microcontroller: a
+  case study.
+\newblock In {\em 2022 IEEE 27th International Conference on Emerging
+  Technologies and Factory Automation (ETFA)}, pages 1--4, 2022.
+
+\bibitem{low_power}
+Sylvain Montagny.
+\newblock Low power modes on stm32.
+\newblock Technical report, Université Savoie Mont Blanc, 2021.
+
+\bibitem{benchmark}
+Tacle benchmarks.
+\newblock \url{https://github.com/tacle/tacle-bench}.
+\newblock Accessed 10/07/2023.
+
+\bibitem{pwr_clock}
+Holly Chiang and Hudson Ayers.
+\newblock Power clocks: Dynamic multi-clock management for embedded systems.
+\newblock In {\em 6th Annual International Conference on Distributed Computing
+  in Sensor Systems (DCOSS 2020)}, 2021.
+
+\end{thebibliography}

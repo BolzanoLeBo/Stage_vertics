@@ -1,0 +1,73 @@
+
+\documentclass[crop]{standalone}
+\input{../macro.tex}
+\begin{document}
+
+	\begin{tikzpicture}
+	\begin{axis}
+			[
+			x=1.3cm,
+			width=\textwidth,
+			ybar = 5,
+			ymin=-7,%range of the y axes
+			ymax=50,
+			height=7cm,
+			bar width=0.17cm,
+			enlarge x limits={0.10},
+			tickwidth=4pt,
+			xtick pos=left,     % remove the ticks on the top
+			ylabel style={align=center},
+			symbolic x coords={PointerChase, 
+				BubbleSort, BubbleNotOpti, FFT,
+				rsaEncrypt, rsaDecrypt, KalmanFilter, MatrixMul, SineTable, Dijkstra, FibRecur},
+			xtick=data,
+			xticklabels={
+				Pointer Chase,
+				Bubble Sort,
+				Bubble Sort no optimization, 
+				Fast Fourier Transform,
+				RSA-Encryption,
+				RSA-Decryption,
+				Kalman Filter,
+				Matrix Multiplication,
+				Sine Lookup Table, 
+				Dijkstra, 
+				Fibonacci Recursive},
+			x tick label style={rotate=45,anchor=east, font=\small},
+			y tick label style={font=\small},
+			nodes near coords={
+				\pgfmathprintnumber[precision=1]{\pgfplotspointmeta}
+			},
+			%yticklabel={\pgfmathparse{\tick}\pgfmathprintnumber{\pgfmathresult}},
+			yticklabel={\pgfmathparse{\tick}\pgfmathprintnumber{\pgfmathresult}\%},
+			%nodes near coords={\pgfmathprintnumber\pgfplotspointmeta},
+			nodes near coords={\pgfmathprintnumber\pgfplotspointmeta},
+			nodes near coords style={/pgf/number format/precision=1, /pgf/number format/fixed, font=\tiny},
+			legend columns=1,
+			legend style={ 
+				at={(0.92,0.70)},
+				anchor=south,
+				legend columns=1,
+				font=\tiny,
+				/tikz/every even column/.append style={column sep=0.25cm}
+			}
+			]
+			
+			
+			\addplot[green!20!black,fill=green!35!white] table [
+			y =24MHz, % Use negative coordinate index as y coordinate
+			x index=0 % Use first column as x coordinate
+			] {../data/code_ccm_energy};
+			\addplot[blue!20!black,fill=blue!35!white] table [
+			y =48MHz, % Use negative coordinate index as y coordinate
+			x index=0 % Use first column as x coordinate
+			] {../data/code_ccm_energy};
+			\addplot[red!20!black,fill=red!35!white] table [
+			y =72MHz, % Use negative coordinate index as y coordinate
+			x index=0 % Use first column as x coordinate
+			] {../data/code_ccm_energy};
+			
+			\legend{24MHZ, 48MHZ, 72MHZ}
+	\end{axis}
+	\end{tikzpicture}
+\end{document}

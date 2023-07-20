@@ -1,0 +1,30 @@
+survey : 
+
+DVFS => favorise low frequency when deadline is easily met.
+Indeed in flash execution high frequency => high energy due to wait states https://en.wikipedia.org/wiki/Wait_state#:~:text=A%20wait%20state%20is%20a,that%20is%20slow%20to%20respond.
+(not true with ccm) 
+
+possible algo : 
+- use DVFS when code running on FLASH
+- take the highest frequency when code running from CCM 
+
+=> win time thanks to ccm so we can lose time on other FLASH codes 
+
+ex : pointer chase at 72 MHz on CCM  
+     RSA at 24 MHz on Flash
+     0.2362 s and 15 921 uJ 
+
+     Normal case at highest freq 
+     0.2502 s and 23 581 uJ 
+To change clock frequency we need also some times 
+but at the end we have the same runtime but a lower energy consumption 
+
+    fib at 72 MHz on CCM 
+    Kalman at 24 MHz on Flash 
+    0.09709 s   7180 uJ 
+
+    Normal case at highest freq 
+    0.0918 s    9414 uJ
+
+    both 72 MHz but fib on CCM 
+    0.0728 s	7536 uJ

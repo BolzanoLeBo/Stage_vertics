@@ -1,0 +1,12 @@
+CF enc 24 
+CF dec 24
+CC enc 24
+CC dec 24
+CF enc 48
+CF dec 48
+CC enc 48
+CC dec 48
+CF enc 72
+CF dec 72
+CC enc 72
+CC dec 72

@@ -1,0 +1,22 @@
+Sleep_on_exit, sleep periodique après une éxecution de fonction 
+
+Augmenter la fréquence peut permettre de réduire la consommation en énergie. 
+
+Peut être que la puissance statique est plus grande mais il est possible qu'augmenter la fréquence améliore le temps d'execution d'un facteur plus grand que celui entre les fréquence. 
+=> t_ex24MHz = (2+e)t_ex48MHz
+ Clock rapide => + puissance 
+ Clock rapide => - energie par cycle
+car plus de cycle par secondes
+
+Cette affirmation est vrai si le nombre d'opération dans le processeur est constant. En effet le rapatriement des instructions de la flash n'est pas à la même fréquence que le processeur, créant des wait states. Il faut donc ajouter du temps d'execution en plus ainsi que la consommation des wait states. 
+
+
+Si instruction ccm et data flash : 
+instructions à 72 MHz 
+rapatriement des données à 24 MHz 
+problème si chaques instructions demanent une lecture ? 
+ => mettre read only dans la ram
+
+Même si à basse fréquence l'amélioration par rapport à la flash est meilleure qu'à haute fréquences, peut être qu'il faut comparer aussi les fréquences entre elles ? 
+
+ 

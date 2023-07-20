@@ -1,0 +1,16 @@
+group	 	72MHz	48MHz	24MHz
+PointerChase	18.6	20.7	42.1
+BubbleSort	15.1	21.2	31.12
+BubbleNotOpti	8.9	6.2	8.1
+FFT		10.7	12.7	18.6
+rsaEncrypt	-0.3	0.2	1
+rsaDecrypt	-0.2	0.1	1.6
+KalmanFilter	-4.1	-2	-3.9
+MatrixMul	10.9	13.3	18.2
+SineTable	15.5	21.6	26.7
+Dijkstra	13.7	17.7	21.6
+FibRecur	15.4	20.5	27.4
+
+
+
+

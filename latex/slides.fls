@@ -1,6 +1,6 @@
-PWD c:\Users\loict\Desktop\Docs STM32\latex
+PWD c:\Users\loict\Desktop\Stage_vertics\latex
 INPUT C:\Users\loict\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\loict\Desktop\Docs STM32\latex\slides.tex
+INPUT c:\Users\loict\Desktop\Stage_vertics\latex\slides.tex
 OUTPUT slides.log
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
@@ -518,6 +518,23 @@ INPUT .\plot\code_ccm_energy.pdf
 INPUT .\plot\code_ccm_energy.pdf
 INPUT .\plot\code_ccm_energy.pdf
 INPUT .\plot\code_ccm_energy.pdf
+INPUT .\plot\code_ccm_intensity.pdf
+INPUT .\plot\code_ccm_intensity.pdf
+INPUT .\plot\code_ccm_intensity.pdf
+INPUT .\plot\code_ccm_intensity.pdf
+INPUT .\plot\code_ccm_intensity.pdf
+INPUT .\plot\code_ccm_intensity.pdf
+INPUT .\images\wait_state_impact.png
+INPUT .\images\wait_state_impact.png
+INPUT .\images\wait_state_impact.png
+INPUT .\images\wait_state_impact.png
+INPUT .\images\wait_state_impact.png
+INPUT .\images\wait_state_impact.png
+INPUT .\images\wait_state_impact.png
+INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Regular-T1-TLF.tfm
+INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\vf\ascender\opensans\OpenSans-Regular-T1-TLF.vf
+INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Regular-T1-TLF--base.tfm
+INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Bold-T1-TLF.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -562,10 +579,6 @@ INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Regular-T1-TLF.tfm
-INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\vf\ascender\opensans\OpenSans-Regular-T1-TLF.vf
-INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Regular-T1-TLF--base.tfm
-INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Bold-T1-TLF.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Regular-T1-TLF.tfm
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\vf\ascender\opensans\OpenSans-Regular-T1-TLF.vf
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\tfm\ascender\opensans\OpenSans-Regular-T1-TLF--base.tfm
@@ -624,6 +637,8 @@ INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
+INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb

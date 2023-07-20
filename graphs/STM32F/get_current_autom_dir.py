@@ -59,7 +59,7 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			end_pic = 1
 			t2 = data_t[i]
 			if (t2-t1)/1000 > t_treshold: 
-				intensity_tab.append(run_i/run_count)
+				intensity_tab.append(round(run_i/run_count, 0))
 				duration_tab.append(round((t2-t1)/1000, 5))
 				time_tab.append((t1, t2))
 			t1 = 0
@@ -89,6 +89,15 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			print("wrong number of execution types")
 			print(ex)
 			exit()
+		for i in range (nb_ex) : 
+			if ex[i] == "CF_DR" : 
+				ex[i] = "data_RAM code_FLASH" 
+			if ex[i] == "CC_DR" : 
+				ex[i] = "data_RAM code_CCM" 
+			if ex[i] == "CF_DC" : 
+				ex[i] = "data_CCM code_FLASH" 
+			if ex[i] == "CC_DC" : 
+				ex[i] = "data_CCM code_CCM" 
 		tab_f = []
 
 		#fusion of the two tabs 
@@ -110,7 +119,7 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			tab_i = [intensity_tab[i] for i in range (len(intensity_tab)) if i % nb_ex == n]
 			tab_d = [duration_tab[i] for i in range (len(duration_tab)) if i % nb_ex == n]
 			tab_t = [time_tab[i] for i in range (len(time_tab)) if i % nb_ex == n]
-			tab_e = [3.3*tab_d[i]*tab_i[i] for i in range (len(tab_i))]
+			tab_e = [round(3.3/1000*tab_d[i]*tab_i[i],3) for i in range (len(tab_i))]
 			df.append(pd.DataFrame([tab_i, tab_d, tab_t, tab_e], index = row, columns = f))
 
 	return (df, ex)
@@ -150,7 +159,10 @@ def main() :
 
 		(df, ex) = get_current(intensity[i], time[i], param_col, i_treshold, t_treshold)
 		for j in range(len(ex)) : 
-			sheet = "{} {}".format(graph[i].removesuffix(".stpm"), ex[j])
+			if graph[i].removesuffix(".stpm") == "multi_ex" : 
+				sheet = ex[j]
+			else :
+				sheet = "{} {}".format(graph[i].removesuffix(".stpm"), ex[j])
 			print("creating the sheet : ", sheet)
 			df[j].to_csv(rep_name+'/'+sheet+'.csv', sep='\t')
 			try :

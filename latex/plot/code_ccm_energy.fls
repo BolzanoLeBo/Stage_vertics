@@ -1,6 +1,6 @@
-PWD c:\Users\loict\Desktop\Docs STM32\latex\plot
+PWD c:\Users\loict\Desktop\Stage_vertics\latex\plot
 INPUT C:\Users\loict\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\loict\Desktop\Docs STM32\latex\plot\code_ccm_energy.tex
+INPUT c:\Users\loict\Desktop\Stage_vertics\latex\plot\code_ccm_energy.tex
 OUTPUT code_ccm_energy.log
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Users\loict\AppData\Local\Programs\MiKTeX\tex\latex\standalone\standalone.cls

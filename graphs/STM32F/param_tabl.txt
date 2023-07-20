@@ -1,0 +1,3 @@
+data_RAM code_FLASH
+data_RAM code_CCM
+energy

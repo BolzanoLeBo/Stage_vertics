@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  20 JUL 2023 09:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  20 JUL 2023 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/loict/Desktop/Docs STM32/latex/slides.tex"
-(c:/Users/loict/Desktop/Docs STM32/latex/slides.tex
+**c:/Users/loict/Desktop/Stage_vertics/latex/slides.tex
+(c:/Users/loict/Desktop/Stage_vertics/latex/slides.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
 (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
@@ -931,107 +931,136 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 {C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/opensans/a_jg4h6q.enc}] (slides.toc) [2
 
 ]
-<images/pointer_chase_capture_mod.png, id=133, 581.67313pt x 213.79875pt>
+<images/pointer_chase_capture_mod.png, id=131, 581.67313pt x 213.79875pt>
 File: images/pointer_chase_capture_mod.png Graphic file (type png)
 <use images/pointer_chase_capture_mod.png>
-Package pdftex.def Info: images/pointer_chase_capture_mod.png  used on input line 196.
+Package pdftex.def Info: images/pointer_chase_capture_mod.png  used on input line 195.
 (pdftex.def)             Requested size: 349.00656pt x 128.28023pt.
 
-Overfull \hbox (6.57124pt too wide) in paragraph at lines 196--196
+Overfull \hbox (6.57124pt too wide) in paragraph at lines 195--195
  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 196.
+(Font)              scaled to size 10.0pt on input line 195.
 [3
 
  <./images/pointer_chase_capture_mod.png>]
-<plot/code_ccm_energy.pdf, id=164, 467.88902pt x 256.80542pt>
+<plot/code_ccm_energy.pdf, id=161, 467.88902pt x 250.05219pt>
 File: plot/code_ccm_energy.pdf Graphic file (type pdf)
 <use plot/code_ccm_energy.pdf>
-Package pdftex.def Info: plot/code_ccm_energy.pdf  used on input line 212.
-(pdftex.def)             Requested size: 280.73558pt x 154.08443pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 212.
+Package pdftex.def Info: plot/code_ccm_energy.pdf  used on input line 207.
+(pdftex.def)             Requested size: 327.52008pt x 175.03532pt.
+
+Overfull \vbox (0.96185pt too high) detected at line 207
+ []
+
+[4
+
+ <./plot/code_ccm_energy.pdf>]
+<plot/code_ccm_intensity.pdf, id=268, 475.0839pt x 250.0542pt>
+File: plot/code_ccm_intensity.pdf Graphic file (type pdf)
+<use plot/code_ccm_intensity.pdf>
+Package pdftex.def Info: plot/code_ccm_intensity.pdf  used on input line 218.
+(pdftex.def)             Requested size: 332.55646pt x 175.03673pt.
+ [5
+
+ <./plot/code_ccm_intensity.pdf>]
+<images/wait_state_impact.png, id=371, 501.37312pt x 286.06876pt>
+File: images/wait_state_impact.png Graphic file (type png)
+<use images/wait_state_impact.png>
+Package pdftex.def Info: images/wait_state_impact.png  used on input line 229.
+(pdftex.def)             Requested size: 350.95879pt x 200.24675pt.
+
+Overfull \hbox (8.52347pt too wide) in paragraph at lines 229--229
+ [] 
+ []
+
+
+Overfull \vbox (46.48766pt too high) detected at line 229
+ []
+
+[6
+
+ <./images/wait_state_impact.png>]
+LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 254.
+ [7
+
+]
+LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 277.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 277.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 212.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 277.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 212.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 277.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 212.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 212.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 212.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 212.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 212.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 212.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 212.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 212.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 212.
- [4
-
- <./plot/code_ccm_energy.pdf>]
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 236.
- [5
+(Font)              scaled to size 9.0pt on input line 277.
+ [8
+
+] [9
 
 ]
-LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 259.
-LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 259.
- [6
-
-] [7
-
-]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 312.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 330.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [8
+) [10
 
 {C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 330.
- [9
+(Font)              scaled to size 10.95pt on input line 348.
+ [11
 
-] [10
+] [12
 
 ]
 \openout4 = `slides.vrb'.
 
- (slides.vrb) [11
+ (slides.vrb) [13
 
-] [12
+] [14
 
-] [13
+] [15
 
 ]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 396.
- [14
+(Font)              scaled to size 9.0pt on input line 414.
+ [16
 
- <C:/Users/loict/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>] [15
+ <C:/Users/loict/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>] [17
 
 ]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 441.
+(Font)              scaled to size 24.88pt on input line 459.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 441.
- [16
+(Font)              scaled to size 17.28pt on input line 459.
+ [18
 
 ]
 \tf@nav=\write6
@@ -1049,20 +1078,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: 3C9AD4141491F6A2B5A0B4FC857B9B50;1220.
+(rerunfilecheck)             Checksum: 2B104725917A7766B5AB027115C401F3;1117.
  ) 
 Here is how much of TeX's memory you used:
- 37800 strings out of 475551
- 913155 string characters out of 5762554
+ 37823 strings out of 475551
+ 913793 string characters out of 5762554
  1933238 words of memory out of 5000000
- 58206 multiletter control sequences out of 15000+600000
+ 58224 multiletter control sequences out of 15000+600000
  597085 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,788b,908s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Bold.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Italic.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on slides.pdf (16 pages, 359136 bytes).
+ 128i,15n,123p,789b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Bold.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Italic.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on slides.pdf (18 pages, 415013 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 533 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 918 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 535 words of extra memory for PDF output out of 10000 (max. 10000000)
 

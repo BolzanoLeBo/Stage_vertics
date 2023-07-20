@@ -181,12 +181,11 @@
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Energy consumption on STM32F3} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+\section{Current measurement with Nucleo LPM01A} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
 
 %------------------------------------------------
-\subsection*{Current Measurement}
 \begin{frame}
-	\frametitle{Current Measurement}
+	\frametitle{Current consumption graphic}
 	\begin{figure}
 		\centering
         \includegraphics[scale=0.6]{images/pointer_chase_capture_mod.png}
@@ -196,20 +195,39 @@
 \end{frame}
 
 %------------------------------------------------
-\subsection*{Moving insturctions in CCM impact}
+\section{Impact of moving instructions in CCM}
 \begin{frame}
-	\frametitle{Impact on energy}
+	\frametitle{Energy decrease when instruction are moved in CCM}
 	\begin{figure}
 		\centering
-        \includegraphics[scale=0.6]{plot/code_ccm_energy.pdf}
-        \caption{}
+        \includegraphics[scale=0.7]{plot/code_ccm_energy.pdf}
         \label{fig:code_ccm_energy}
 	\end{figure}
-	\begin{itemize}
-		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-		\item Nam cursus est eget velit posuere pellentesque
-	\end{itemize}
+	Moving instruction in CCM SRAM can overall improve energy consumption 
 \end{frame}
+
+
+\begin{frame}
+	\frametitle{Energy decrease when instruction are moved in CCM}
+	\begin{figure}
+		\centering
+        \includegraphics[scale=0.7]{plot/code_ccm_intensity.pdf}
+        \label{fig:code_ccm_intensity}
+	\end{figure}
+	In high frequencies, intensity when the code is running from flash is lowered.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Wait states impact on intensity}
+	\begin{figure}
+		\centering
+        \includegraphics[scale=0.7]{images/wait_state_impact.png}
+        \label{fig:wait_state}
+	\end{figure}
+	Wait states lower the average intensity of an execution. 
+	This effect is thus increased at high frequency where we have more wait states.
+\end{frame}
+
 
 %------------------------------------------------
 

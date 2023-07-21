@@ -1,67 +1,80 @@
-\begin{tikzpicture}
-\begin{axis}
-		[   ybar=8pt,   % space between the bars
-		height=7cm,
-		x=1.3cm,
-		width=\textwidth,
-		ymin=-15,%range of the y axes
-		ymax=55,
-		bar width=0.17cm,
-		enlarge x limits={0.10},
-		tickwidth=4pt,
-		xtick pos=left,     % remove the ticks on the top
-		%ylabel={execution time decrease},
-		ylabel style={align=center},
-		symbolic x coords={PointerChase, 
-			BubbleSort, BubbleNotOpti, FFT,
-			rsaEncrypt, rsaDecrypt, KalmanFilter, MatrixMul, SineTable, Dijkstra, FibRecur},
-		xtick=data,
-		xticklabels={
-			Pointer Chase,
-			Bubble Sort,
-                Bubble Sort no optimization, 
-			Fast Fourier Transform,
-			RSA-Encryption,
-			RSA-Decryption,
-			Kalman Filter,
-                Matrix Multiplication,
-                Sine Lookup Table, 
-                Dijkstra, 
-                Fibonacci Recursive},
-		x tick label style={rotate=45,anchor=east, font=\small},
-		y tick label style={font=\small},
-		nodes near coords={
-			\pgfmathprintnumber[precision=1]{\pgfplotspointmeta}
-		},
-		%yticklabel={\pgfmathparse{\tick}\pgfmathprintnumber{\pgfmathresult}},
-		yticklabel={\pgfmathparse{\tick}\pgfmathprintnumber{\pgfmathresult}\%},
-		%nodes near coords={\pgfmathprintnumber\pgfplotspointmeta},
-		nodes near coords={\pgfmathprintnumber\pgfplotspointmeta\%},
-		nodes near coords style={/pgf/number format/precision=1, /pgf/number format/fixed, font=\tiny},
-		legend columns=1,
-		legend style={ 
-			at={(0.92,0.70)},
-			anchor=south,
+
+\documentclass[crop]{standalone}
+\input{../macro.tex}
+\begin{document}
+
+	\begin{tikzpicture}
+	\begin{axis}
+			[
+			x=1.3cm,
+			width=\textwidth,
+			ybar = 5,
+			height=7cm,
+			bar width=0.17cm,
+			enlarge x limits={0.10},
+			tickwidth=4pt,
+			xtick pos=left,     % remove the ticks on the top
+			ylabel style={align=center},
+			symbolic x coords={
+				FFT,
+				RSA_enc,
+				RSA_dec,
+				bubble_sort,
+				bubble_sort_no_opt,
+				dijkstra,
+				kalman,
+				mat_mul,
+				pointer_chase,
+				recursif, 
+				sine},
+			xtick=data,
+			xticklabels={
+				Fast Fourier Transform,
+				RSA encryption, 
+				RSA decryption,
+				Bubble Sort,
+				Bubble Sort not opti,
+				Dijkstra,
+				Kalman Filter,
+				Matrix multiplication,
+				Pointer Chase, 
+				Recursive Fibonacci, 
+				Sine lookup },
+			x tick label style={rotate=45,anchor=east, font=\small},
+			y tick label style={font=\small},
+			nodes near coords={
+				\pgfmathprintnumber[precision=1]{\pgfplotspointmeta}
+			},
+			yticklabel={\pgfmathparse{\tick}\pgfmathprintnumber{\pgfmathresult}},
+			%yticklabel={\pgfmathparse{\tick}\pgfmathprintnumber{\pgfmathresult}\%},
+			%nodes near coords={\pgfmathprintnumber\pgfplotspointmeta},
+			nodes near coords={\pgfmathprintnumber\pgfplotspointmeta},
+			nodes near coords style={/pgf/number format/precision=2, /pgf/number format/fixed, font=\tiny},
 			legend columns=1,
-			font=\tiny,
-			/tikz/every even column/.append style={column sep=0.25cm}
-		}
-		]
-		
-		
-		\addplot[red!20!black,fill=red!35!white] table [
-		y =24MHz, % Use negative coordinate index as y coordinate
-		x index=0 % Use first column as x coordinate
-		] {data/code_ccm_runtime};
-		\addplot[blue!20!black,fill=blue!35!white] table [
-		y =48MHz, % Use negative coordinate index as y coordinate
-		x index=0 % Use first column as x coordinate
-		] {data/code_ccm_runtime};
-		\addplot[green!20!black,fill=green!35!white] table [
-		y =72MHz, % Use negative coordinate index as y coordinate
-		x index=0 % Use first column as x coordinate
-		] {data/code_ccm_runtime};
-		
-		\legend{72MHz, 48MHz, 24MHz}
-\end{axis}
-\end{tikzpicture}
+			legend style={ 
+				at={(0.05,0.95)},
+				anchor=north west,
+				legend columns=1,
+				font=\tiny,
+				/tikz/every even column/.append style={column sep=0.25cm}
+			}
+			]
+			
+			
+			\addplot[green!20!black,fill=green!35!white] table [
+			y =24MHz, % Use negative coordinate index as y coordinate
+			x index=0 % Use first column as x coordinate
+			] {../data/code_ccm_runtime.csv};
+			\addplot[blue!20!black,fill=blue!35!white] table [
+			y =48MHz, % Use negative coordinate index as y coordinate
+			x index=0 % Use first column as x coordinate
+			] {../data/code_ccm_runtime.csv};
+			\addplot[red!20!black,fill=red!35!white] table [
+			y =72MHz, % Use negative coordinate index as y coordinate
+			x index=0 % Use first column as x coordinate
+			] {../data/code_ccm_runtime.csv};
+			
+			\legend{24MHZ, 48MHZ, 72MHZ}
+	\end{axis}
+	\end{tikzpicture}
+\end{document}

@@ -1,0 +1,12 @@
+\documentclass[crop]{standalone}
+\input{../macro.tex}
+\begin{document}
+\pgfplotstabletypeset[
+    col sep=tab,
+    string type,
+    columns/group/.style={column name=group, column type=l},
+    columns/24MHz/.style={column name=24MHz, column type=l},
+    columns/48MHz/.style={column name=48MHz, column type=c},
+    columns/72MHz/.style={column name=72MHz, column type=c},
+    ]{../data/data_RAM-code_CCM_energy.csv}
+\end{document}

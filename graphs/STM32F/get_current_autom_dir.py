@@ -90,26 +90,32 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			print(ex)
 			exit()
 		for i in range (nb_ex) : 
+			#for multi ex code 
 			if ex[i] == "CF_DR" : 
-				ex[i] = "data_RAM code_FLASH" 
+				ex[i] = "data_RAM-code_FLASH" 
 			if ex[i] == "CC_DR" : 
-				ex[i] = "data_RAM code_CCM" 
+				ex[i] = "data_RAM-code_CCM" 
 			if ex[i] == "CF_DC" : 
-				ex[i] = "data_CCM code_FLASH" 
+				ex[i] = "data_CCM-code_FLASH" 
 			if ex[i] == "CC_DC" : 
-				ex[i] = "data_CCM code_CCM" 
-		tab_f = []
+				ex[i] = "data_CCM-code_CCM" 
 
-		#fusion of the two tabs 
-		'''for n in range (nb_ex):
-			f2 = f.copy()
-			for i in range (nb_f):
-				f2[i] = f2[i] + ' ' + ex[n]
-			tab_f.append(f2) '''
-		#remove the reset pic and add the data in the dataframe 
-		intensity_tab = intensity_tab[1:len(intensity_tab)]
+			#for multi ex code with ro data
+			if ex[i] == "CF_roF" : 
+				ex[i] = "ro_FLASH-code_FLASH" 
+			if ex[i] == "CC_roF" : 
+				ex[i] = "ro_FLASH-code_CCM" 
+			if ex[i] == "CF_roC" : 
+				ex[i] = "ro_CCM-code_FLASH" 
+			if ex[i] == "CC_roC" : 
+				ex[i] = "ro_CCL-code_CCM" 
+		tab_f = []
+		
+		#remove the reset 
 		duration_tab = duration_tab[1:len(duration_tab)]
 		time_tab = time_tab[1:len(time_tab)]
+		intensity_tab = intensity_tab[1:len(intensity_tab)]
+		#tab for splitted executions
 		tab_i = []
 		tab_d = []
 		tab_t = []
@@ -119,7 +125,7 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			tab_i = [intensity_tab[i] for i in range (len(intensity_tab)) if i % nb_ex == n]
 			tab_d = [duration_tab[i] for i in range (len(duration_tab)) if i % nb_ex == n]
 			tab_t = [time_tab[i] for i in range (len(time_tab)) if i % nb_ex == n]
-			tab_e = [round(3.3/1000*tab_d[i]*tab_i[i],3) for i in range (len(tab_i))]
+			tab_e = [round(3.3/1000*tab_d[i]*tab_i[i],3) for i in range (len(tab_d))]
 			df.append(pd.DataFrame([tab_i, tab_d, tab_t, tab_e], index = row, columns = f))
 
 	return (df, ex)
@@ -136,8 +142,6 @@ def main() :
 	else :
 		i_treshold = 2000
 		t_treshold = 0.001
-	#dest_name = sys.argv[2]
-	#graph = sys.argv[3]
 	intensity = []
 	time = []
 	graph = []
@@ -160,9 +164,11 @@ def main() :
 		(df, ex) = get_current(intensity[i], time[i], param_col, i_treshold, t_treshold)
 		for j in range(len(ex)) : 
 			if graph[i].removesuffix(".stpm") == "multi_ex" : 
+				#if multi ex the name is already made in the get current func
 				sheet = ex[j]
 			else :
-				sheet = "{} {}".format(graph[i].removesuffix(".stpm"), ex[j])
+				"create the file name"
+				sheet = "{}-{}".format(graph[i].removesuffix(".stpm"), ex[j])
 			print("creating the sheet : ", sheet)
 			df[j].to_csv(rep_name+'/'+sheet+'.csv', sep='\t')
 			try :

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  20 JUL 2023 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  21 JUL 2023 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,25 +618,25 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<plot/code_ccm_energy.pdf, id=6, 467.88902pt x 250.05219pt>
+<plot/code_ccm_energy.pdf, id=6, 482.91216pt x 234.20097pt>
 File: plot/code_ccm_energy.pdf Graphic file (type pdf)
 <use plot/code_ccm_energy.pdf>
 Package pdftex.def Info: plot/code_ccm_energy.pdf  used on input line 125.
-(pdftex.def)             Requested size: 467.88788pt x 250.05157pt.
-<plot/code_ccm_intensity.pdf, id=8, 475.0839pt x 250.0542pt>
+(pdftex.def)             Requested size: 482.91096pt x 234.2004pt.
+<plot/code_ccm_intensity.pdf, id=8, 482.91216pt x 234.20299pt>
 File: plot/code_ccm_intensity.pdf Graphic file (type pdf)
 <use plot/code_ccm_intensity.pdf>
 Package pdftex.def Info: plot/code_ccm_intensity.pdf  used on input line 130.
-(pdftex.def)             Requested size: 475.08273pt x 250.05357pt.
- (plot/code_ccm_runtime.tex
-Package pgfplots info on input line 49: Using 'lua backend=false' for axis: x coord trafo unsupported.
-PGFPlots: reading {data/code_ccm_runtime}
-PGFPlots: reading {data/code_ccm_runtime}
-PGFPlots: reading {data/code_ccm_runtime}
-) [1{C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+(pdftex.def)             Requested size: 482.91096pt x 234.20241pt.
+<plot/code_ccm_runtime.pdf, id=10, 482.91216pt x 234.20097pt>
+File: plot/code_ccm_runtime.pdf Graphic file (type pdf)
+<use plot/code_ccm_runtime.pdf>
+Package pdftex.def Info: plot/code_ccm_runtime.pdf  used on input line 136.
+(pdftex.def)             Requested size: 482.91096pt x 234.2004pt.
+ [1{C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
-] [2 <./images/pointer_chase_capture_mod.png> <./plot/code_ccm_energy.pdf>] [3 <./plot/code_ccm_intensity.pdf>]
+] [2 <./images/pointer_chase_capture_mod.png> <./plot/code_ccm_energy.pdf>] [3 <./plot/code_ccm_intensity.pdf> <./plot/code_ccm_runtime.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4
@@ -671,17 +671,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27955 strings out of 475551
- 716484 string characters out of 5762554
- 1945238 words of memory out of 5000000
- 48687 multiletter control sequences out of 15000+600000
- 675266 words of font info for 170 fonts, out of 8000000 for 9000
+ 27364 strings out of 475551
+ 700274 string characters out of 5762554
+ 1935238 words of memory out of 5000000
+ 48111 multiletter control sequences out of 15000+600000
+ 670644 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,19n,117p,787b,2440s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 286152 bytes).
+ 89i,8n,117p,787b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 309251 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
+ 311 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1689850160 "c:/Users/loict/Desktop/Stage_vertics/latex/plot/code_ccm_energy.tex" "code_ccm_energy.pdf" "code_ccm_energy" 1689850163 0
-  "../data/code_ccm_energy" 1689850149 381 97bac0cf6ab2508aaaec2e66afa6bc4f ""
+["pdflatex"] 1689923643 "c:/Users/loict/Desktop/Stage_vertics/latex/plot/code_ccm_energy.tex" "code_ccm_energy.pdf" "code_ccm_energy" 1689923646 0
+  "../data/code_ccm_energy.csv" 1689923642 342 70672028c0db5fd8e34ca5140046eab3 ""
   "../macro.tex" 1689836694 550 8fd0ef0976b31d9936b6f034815835c3 ""
   "C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1689834833 143894 c9879d896f3723b277776564312b7eb1 ""
   "C:/Users/loict/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk" 1689834749 12520 a514dcffdf578479149cf67321a306d4 ""
@@ -33,6 +33,7 @@
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1247596667 37912 07513ec114ac737ab54cea0152f4424b ""
+  "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1247596667 36094 798f80770b3b148ceedd006d487db67c ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
@@ -195,9 +196,9 @@
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/loict/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/loict/Desktop/Stage_vertics/latex/plot/code_ccm_energy.tex" 1689850157 2185 2c96a1de6677b1247092fd69a1a2273f ""
-  "code_ccm_energy.aux" 1689850162 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "code_ccm_energy.tex" 1689850157 2185 2c96a1de6677b1247092fd69a1a2273f ""
+  "c:/Users/loict/Desktop/Stage_vertics/latex/plot/code_ccm_energy.tex" 1689923624 2210 5b3d8d0f2abafff514696d4a426052ee ""
+  "code_ccm_energy.aux" 1689923646 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "code_ccm_energy.tex" 1689923624 2210 5b3d8d0f2abafff514696d4a426052ee ""
   (generated)
   "code_ccm_energy.aux"
   "code_ccm_energy.log"

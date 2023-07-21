@@ -206,9 +206,18 @@
 	Moving instruction in CCM SRAM can overall improve energy consumption 
 \end{frame}
 
+\begin{frame}
+	\frametitle{Runtime decrease when instruction are moved in CCM}
+	\begin{figure}
+		\centering
+        \includegraphics[scale=0.7]{plot/code_ccm_runtime.pdf}
+        \label{fig:code_ccm_runtime}
+	\end{figure}
+	In high frequencies the runtime is reduced when code is moved in CCM SRAM.
+\end{frame}
 
 \begin{frame}
-	\frametitle{Energy decrease when instruction are moved in CCM}
+	\frametitle{intensiy decrease when instruction are moved in CCM}
 	\begin{figure}
 		\centering
         \includegraphics[scale=0.7]{plot/code_ccm_intensity.pdf}
@@ -227,6 +236,8 @@
 	Wait states lower the average intensity of an execution. 
 	This effect is thus increased at high frequency where we have more wait states.
 \end{frame}
+
+
 
 
 %------------------------------------------------

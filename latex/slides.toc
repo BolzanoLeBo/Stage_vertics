@@ -1,8 +1,6 @@
-\beamer@sectionintoc {1}{Current measurement with Nucleo LPM01A}{3}{0}{1}
-\beamer@sectionintoc {2}{Impact of moving instructions in CCM}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Blocks}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Columns}{9}{0}{2}
-\beamer@sectionintoc {3}{Table and Figure Examples}{10}{0}{3}
-\beamer@subsectionintoc {3}{1}{Table}{10}{0}{3}
-\beamer@sectionintoc {4}{Mathematics}{11}{0}{4}
-\beamer@sectionintoc {5}{Referencing}{16}{0}{5}
+\beamer@sectionintoc {1}{Current measurement with Nucleo LPM01A}{2}{0}{1}
+\beamer@sectionintoc {2}{Impact of moving instructions in CCM}{3}{0}{2}
+\beamer@sectionintoc {3}{Energy variation over the frequency}{7}{0}{3}
+\beamer@sectionintoc {4}{Ideas of scheduling algorithms}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Offline algorithm}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Online Algorithms}{13}{0}{4}

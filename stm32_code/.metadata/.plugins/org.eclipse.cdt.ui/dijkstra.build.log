@@ -1,0 +1,10 @@
+09:11:11 **** Build of configuration Release for project dijkstra ****
+make -j8 all 
+arm-none-eabi-size   dijkstra.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8288	   6420	  18260	  32968	   80c8	dijkstra.elf
+Finished building: default.size.stdout
+ 
+
+09:11:12 Build Finished. 0 errors, 0 warnings. (took 819ms)
+

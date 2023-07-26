@@ -170,13 +170,6 @@
 
 % The table of contents outputs the sections and subsections that appear in your presentation, specified with the standard \section and \subsection commands. You may either display all sections and subsections on one slide with \tableofcontents, or display each section at a time on subsequent slides with \tableofcontents[pausesections]. The latter is useful if you want to step through each section and mention what you will discuss.
 
-\begin{frame}
-	\frametitle{Presentation Overview} % Slide title, remove this command for no title
-	
-	\tableofcontents % Output the table of contents (all sections on one slide)
-	%\tableofcontents[pausesections] % Output the table of contents (break sections up across separate slides)
-\end{frame}
-
 %----------------------------------------------------------------------------------------
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
@@ -190,40 +183,36 @@
 		\centering
         \includegraphics[scale=0.6]{images/pointer_chase_capture_mod.png}
         \caption{Intensity consumption graph for differents pointer chase executions}
-        \label{fig:graph_intensity}
 	\end{figure}
 \end{frame}
 
 %------------------------------------------------
 \section{Impact of moving instructions in CCM}
 \begin{frame}
-	\frametitle{Energy decrease when instruction are moved in CCM}
+	\frametitle{Energy decrease when instruction are moved into CCM}
 	\begin{figure}
 		\centering
         \includegraphics[scale=0.7]{plot/code_ccm_energy.pdf}
-        \label{fig:code_ccm_energy}
 	\end{figure}
-	Moving instruction in CCM SRAM can overall improve energy consumption 
+	Moving instruction into CCM SRAM can overall improve energy consumption 
 \end{frame}
 
 \begin{frame}
-	\frametitle{Runtime decrease when instruction are moved in CCM}
+	\frametitle{Runtime decrease when instruction are moved into CCM}
 	\begin{figure}
 		\centering
         \includegraphics[scale=0.7]{plot/code_ccm_runtime.pdf}
-        \label{fig:code_ccm_runtime}
 	\end{figure}
-	In high frequencies the runtime is reduced when code is moved in CCM SRAM.
+	In high frequencies the runtime is reduced when code is moved into CCM SRAM.
 \end{frame}
 
 \begin{frame}
-	\frametitle{intensiy decrease when instruction are moved in CCM}
+	\frametitle{Intensiy decrease when instruction are moved into CCM}
 	\begin{figure}
 		\centering
         \includegraphics[scale=0.7]{plot/code_ccm_intensity.pdf}
-        \label{fig:code_ccm_intensity}
 	\end{figure}
-	In high frequencies, intensity when the code is running from flash is lowered.
+	In high frequencies, intensity is lowered when the code is running from flash.
 \end{frame}
 
 \begin{frame}
@@ -231,233 +220,118 @@
 	\begin{figure}
 		\centering
         \includegraphics[scale=0.7]{images/wait_state_impact.png}
-        \label{fig:wait_state}
 	\end{figure}
 	Wait states lower the average intensity of an execution. 
 	This effect is thus increased at high frequency where we have more wait states.
 \end{frame}
 
-
-
-
-%------------------------------------------------
-
-\subsection{Blocks}
+\section{Energy variation over the frequency}
 
 \begin{frame}
-	\frametitle{Blocks of Highlighted Text}
-	
-	\begin{block}{Block Title}
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue.
+	\frametitle{Absolute energy when code is running from CCM (mJ)}
+	\input{plot/table_energy_code_ccm.tex}
+	Energy remains almost the same even if the frequency increases.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Absolute energy when code is running from FLASH (mJ)}
+	\input{plot/table_energy_flash.tex}
+	Due to the wait states there is a waste of energy in high frequencies.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Pists}
+	\begin{block}{Comparaison with FLASH} % Block without title
+		Moving instructions in CCM SRAM reduces runtime and energy consumption.
+		It is almost always better to run code from CCM.
 	\end{block}
-	
-	\begin{exampleblock}{Example Block Title}
-		Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan.
-	\end{exampleblock}
-	
-	\begin{alertblock}{Alert Block Title}
-		Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-	\end{alertblock}
-	
-	\begin{block}{} % Block without title
-		Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci.
-	\end{block}
-\end{frame}
-
-%------------------------------------------------
-
-\subsection{Columns}
-
-\begin{frame}
-	\frametitle{Multiple Columns}
-	\framesubtitle{Subtitle} % Optional subtitle
-	
-	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\begin{column}{0.45\textwidth} % Left column width
-			\textbf{Heading}
-			\begin{enumerate}
-				\item Statement
-				\item Explanation
-				\item Example
-			\end{enumerate}
-		\end{column}
-		\begin{column}{0.5\textwidth} % Right column width
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-		\end{column}
-	\end{columns}
-\end{frame}
-
-%------------------------------------------------
-
-\section{Table and Figure Examples}
-
-\subsection{Table}
-
-\begin{frame}
-	\frametitle{Table}
-	\framesubtitle{Subtitle} % Optional subtitle
-	
-	\begin{table}
-		\begin{tabular}{l l l}
-			\toprule
-			\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-			\midrule
-			Treatment 1 & 0.0003262 & 0.562 \\
-			Treatment 2 & 0.0015681 & 0.910 \\
-			Treatment 3 & 0.0009271 & 0.296 \\
-			\bottomrule
-		\end{tabular}
-		\caption{Table caption}
-	\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-
-%------------------------------------------------
-
-\section{Mathematics}
-
-\begin{frame}
-	\frametitle{Definitions \& Examples}
-	
-	\begin{definition}
-		A \alert{prime number} is a number that has exactly two divisors.
-	\end{definition}
-	
-	\smallskip % Vertical whitespace
-	
-	\begin{example}
+	\begin{block}{Energy over frequency} % Block without title
 		\begin{itemize}
-			\item 2 is prime (two divisors: 1 and 2).
-			\item 3 is prime (two divisors: 1 and 3).
-			\item 4 is not prime (\alert{three} divisors: 1, 2, and 4).
+			\item Energy is constant when code runs from CCM at every frequency. There are
+			only advantages to run from CCM at maximum frequency.
+			\item When instructions are in FLASH we can gain energy if the
+			frequency is lower
 		\end{itemize}
-	\end{example}
-	
-	\smallskip % Vertical whitespace
-	
-	You can also use the \texttt{theorem}, \texttt{lemma}, \texttt{proof} and \texttt{corollary} environments.
+	\end{block}
 \end{frame}
 
-%------------------------------------------------
+\section{Ideas of scheduling algorithms}
+
+\subsection{Offline algorithm}
+
+\begin{frame}[fragile]
+	\frametitle{Offline algorithm}
+	Choose the best tasks to move in CCM and which one we lower the frequency
+	
+	\[ 
+		\text{min.} \quad
+		\sum_{i=1}^n \sum_{\forall {p}, \forall {d}, 
+		\forall {f}} {E_i^{{p}, {d}, {f}} \cdot x^{{p}, {d}, {f}}_i}
+		\]
+	{\tiny
+		\begin{align*}
+			\text{s.t.}~~ & 
+			\sum_{i=1}^n \left (\sum_{\forall {d}}{m^{P}_i  x^{{\diamond}, {d}}_{i}} + \sum_{\forall {p}}
+			{m^{D}_i  x^{{p}, {\diamond}}_{i}} \right ) \leq M^{{\diamond}},~ \diamond \in \{F,C\} \\ 
+			&\sum_{i=1}^n{\left (m^I_i + \sum_{\forall {p}}{m^{D}_i  x^{{p}, {S}}_{i}} \right )} \leq M^{{S}} \\ 
+			&\sum_{\forall {p}, \forall {d}, \forall {f}}{x^{{p}, {d}, {f}}_i} = 1, \quad \forall i\\	
+			&\sum_{i=1}^n \sum_{\forall {p}, \forall {d}, \forall {f}}
+			{U_i^{{p}, {d}, {f}} \cdot x_i^{{p}, {d}, {f}}} \leq 1\\  
+			&x^{{p}, {d}, {f}}_i \in \{0,1\}, \quad \forall {i}, {p}, {d},\forall {f} \in [8,72]		
+		\end{align*}
+	}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\frametitle{ Normal EDF example }
+	\begin{figure}
+		\includegraphics{schedule/edf.pdf}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+	\frametitle{ Application of the previous algorithm }
+	\begin{figure}
+		\includegraphics{schedule/offline_algo.pdf}
+	\end{figure}
+	
+\end{frame}
+
+\subsection{Online Algorithms}
 
 \begin{frame}
-	\frametitle{Theorem, Corollary \& Proof}
-	
-	\begin{theorem}[Mass--energy equivalence]
-		$E = mc^2$
-	\end{theorem}
-	
-	\begin{corollary}
-		$x + y = y + x$
-	\end{corollary}
-	
-	\begin{proof}
-		$\omega + \phi = \epsilon$
-	\end{proof}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-	\frametitle{Equation}
-
-	\begin{equation}
-		\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-	\end{equation}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-	\frametitle{Verbatim}
-	
-	\begin{example}[Theorem Slide Code]
-		\begin{verbatim}
-			\begin{frame}
-				\frametitle{Theorem}
-				\begin{theorem}[Mass--energy equivalence]
-					$E = mc^2$
-				\end{theorem}
-		\end{frame}\end{verbatim} % Must be on the same line
-	\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-	Slide without title.
-\end{frame}
-
-%------------------------------------------------
-
-\section{Referencing}
-
-\begin{frame}
-	\frametitle{Citing References}
-	
-	An example of the \texttt{\textbackslash cite} command to cite within the presentation:
-	
-	\bigskip % Vertical whitespace
-	
-	This statement requires citation \cite{p1,p2}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame} % Use [allowframebreaks] to allow automatic splitting across slides if the content is too long
-	\frametitle{References}
-	
-	\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below, you may need to use multiple columns and/or reduce the font size further if you have many references
-		\footnotesize % Reduce the font size in the bibliography
-		
-		\bibitem[Smith, 2022]{p1}
-			John Smith (2022)
-			\newblock Publication title
-			\newblock \emph{Journal Name} 12(3), 45 -- 678.
+	\frametitle{Online algorithms}
+	\begin{block}{Dynamic frequency scaling for FLASH}
+		If we can still complete the task with the worst case time execution before the deadline. Then we lower the frequency. 
+	\end{block}
+	\begin{block}{Dynamic CCM SRAM allocation}
+		\begin{itemize}
+			\item Divide the CCM into slots
+			\item Before executing copy task instructions in the CCM slot
+			\item the worst case execution time is equal to the CCM execution time with the associated memcopy
 			
-		\bibitem[Kennedy, 2023]{p2}
-			Annabelle Kennedy (2023)
-			\newblock Publication title
-			\newblock \emph{Journal Name} 12(3), 45 -- 678.
-	\end{thebibliography}
-\end{frame}
+		\end{itemize}
+		$\Rightarrow$ Changes in the scheduling algorithm: mutex, blocking, non-preemptive tasks $\ldots$
 
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGMENTS SLIDE
-%----------------------------------------------------------------------------------------
+	\end{block}
+\end{frame}
 
 \begin{frame}
-	\frametitle{Acknowledgements}
-	
-	\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\begin{column}{0.45\textwidth} % Left column width
-			\textbf{Smith Lab}
-			\begin{itemize}
-				\item Alice Smith
-				\item Devon Brown
-			\end{itemize}
-			\textbf{Cook Lab}
-			\begin{itemize}
-				\item Margaret
-				\item Jennifer
-				\item Yuan
-			\end{itemize}
-		\end{column}		
-		\begin{column}{0.5\textwidth} % Right column width
-			\textbf{Funding}
-			\begin{itemize}
-				\item British Royal Navy
-				\item Norwegian Government
-			\end{itemize}
-		\end{column}
-	\end{columns}
+	\frametitle{STM32G}
+	\begin{block}{Different execution modes}
+		\begin{itemize}
+			\item Range 1 mode (normal) : normal execution from 8 to 150 MHz.
+			\item Range 1 boost mode : frequency up to 170 MHz, less wait states but higher voltage .
+			\item Range 2 low power mode : frequency between 8 and 32 MHz, better consumption in these frequencies.
+		\end{itemize}
+	\end{block}
+	\begin{block}{FLASH cache}
+		Allows zero wait states and pre fetch when instructions are in FLASH $\rightarrow$ same results as the CCM.
+	\end{block}
 \end{frame}
 
-%----------------------------------------------------------------------------------------
-%	CLOSING SLIDE
-%----------------------------------------------------------------------------------------
 
 \begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
 	\begin{center}

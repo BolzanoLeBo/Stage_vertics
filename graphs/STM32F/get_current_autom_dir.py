@@ -108,7 +108,11 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			if ex[i] == "CF_roC" : 
 				ex[i] = "ro_CCM-code_FLASH" 
 			if ex[i] == "CC_roC" : 
-				ex[i] = "ro_CCL-code_CCM" 
+				ex[i] = "ro_CCM-code_CCM" 
+			if ex[i] == "CF_roR" : 
+				ex[i] = "ro_RAM-code_CCM"
+			if ex[i] == "CC_roR" : 
+				ex[i] = "ro_RAM-code_CCM"
 		tab_f = []
 		
 		#remove the reset 

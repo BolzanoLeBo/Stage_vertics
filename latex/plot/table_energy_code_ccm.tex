@@ -1,18 +1,19 @@
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c c c c|} 
- \hline
- Algorithm & 24MHz & 48MHz & 72MHz \\ [0.5ex] 
- \hline\hline
- Pointer Chase & 8.815 & 9.402 & 10.026 \\ 
- Bubble Sort & 11.294 & 10.962 & 10.893 \\
- Bubble Sort no opti & 43.017 & 42.524 & 41.669 \\
- RSA decrypt & 5.239 & 5.166 & 5.469 \\
- Kalman & 2.301 & 2.357 & 2.665 \\
- Dijkstra & 36.318 & 35.189 & 34.828 \\[1ex] 
- \hline
-\end{tabular}
-\caption{Absolute energy (mJ) with instruction in CCM SRAM}
-\label{energy_tab_code_ccm}
+\begin{table}
+    \centering
+    \begin{tabular}{||c c c c||}
+    \hline
+        ~ & 24MHz & 48MHz & 72MHz \\ [0.5ex] 
+        \hline \hline
+        FFT & 0.262 & 0.255 & 0.251 \\ 
+        RSA enc & 0.668 & 0.664 & 0.694 \\ 
+        RSA dec & 5.239 & 5.167 & 5.469 \\ 
+        bubble sort & 11.294 & 10.963 & 10.893 \\ 
+        bubble sort no opti & 43.018 & 42.525 & 41.67 \\ 
+        dijkstra & 36.319 & 35.19 & 34.829 \\ 
+        kalman & 2.302 & 2.358 & 2.665 \\ 
+        matrix mul & 0.227 & 0.226 & 0.222 \\ 
+        pointer chase & 8.816 & 9.402 & 10.026 \\ 
+        recursive & 5.199 & 5.036 & 4.971 \\ 
+        sine lookup & 14.42 & 14.62 & 14.933 \\ [1ex] \hline
+    \end{tabular}
 \end{table}

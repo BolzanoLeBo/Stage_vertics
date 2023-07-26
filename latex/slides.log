@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  21 JUL 2023 09:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  24 JUL 2023 07:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -559,17 +559,6 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
-\c@ALC@unique=\count338
-\c@ALC@line=\count339
-\c@ALC@rem=\count340
-\c@ALC@depth=\count341
-\ALC@tlm=\skip65
-\algorithmicindent=\skip66
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
@@ -595,7 +584,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count342
+\pgf@plot@mark@count=\count338
 \pgfplotmarksize=\dimen311
 )
 \tikz@lastx=\dimen312
@@ -610,17 +599,17 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box78
 \tikz@tempbox=\box79
 \tikz@tempbox@bg=\box80
-\tikztreelevel=\count343
-\tikznumberofchildren=\count344
-\tikznumberofcurrentchild=\count345
-\tikz@fig@count=\count346
+\tikztreelevel=\count339
+\tikznumberofchildren=\count340
+\tikznumberofcurrentchild=\count341
+\tikz@fig@count=\count342
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count347
-\pgfmatrixcurrentcolumn=\count348
-\pgf@matrix@numberofcolumns=\count349
+\pgfmatrixcurrentrow=\count343
+\pgfmatrixcurrentcolumn=\count344
+\pgf@matrix@numberofcolumns=\count345
 )
-\tikz@expandcount=\count350
+\tikz@expandcount=\count346
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
@@ -630,33 +619,33 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@tokb=\toks49
 \t@pgfplots@tokc=\toks50
 \pgfplots@tmpa=\dimen320
-\c@pgfplots@coordindex=\count351
-\c@pgfplots@scanlineindex=\count352
+\c@pgfplots@coordindex=\count347
+\c@pgfplots@scanlineindex=\count348
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks51
 \t@pgf@tokb=\toks52
 \t@pgf@tokc=\toks53
 (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count353
+\c@pgfplotsarray@tmp=\count349
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count354
+\c@pgfplotstable@counta=\count350
 \t@pgfplotstable@a=\toks54
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count355
+\c@pgfplotslibrarysurf@no=\count351
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen321
 \pgfdecoratedremainingdistance=\dimen322
 \pgfdecoratedinputsegmentcompleteddistance=\dimen323
 \pgfdecoratedinputsegmentremainingdistance=\dimen324
 \pgf@decorate@distancetomove=\dimen325
-\pgf@decorate@repeatstate=\count356
+\pgf@decorate@repeatstate=\count352
 \pgfdecorationsegmentamplitude=\dimen326
 \pgfdecorationsegmentlength=\dimen327
 )
 \tikz@lib@dec@box=\box81
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count357
+\pgfplots@numplots=\count353
 \pgfplots@xmin@reg=\dimen328
 \pgfplots@xmax@reg=\dimen329
 \pgfplots@ymin@reg=\dimen330
@@ -675,12 +664,176 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box82
 \extrarowheight=\dimen335
 \NC@list=\toks55
-\extratabsurround=\skip67
-\backup@length=\skip68
+\extratabsurround=\skip65
+\backup@length=\skip66
 \ar@cellbox=\box83
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threeparttable.sty
+)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/rtsched\rtsched.sty
+Package: rtsched 2005/01/01
+
+'rtsched' style for Latex and PSTricks
+Easily draw real-time schedules in TeX/Latex.
+(c) 2005, Giuseppe Lipari, Pisa, Italy (g.lipari@sssup.it)
+Version 1.0
+(C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex  v1.42, 2010/05/14 <tvz>
+\multido@count=\count354
+\multidocount=\count355
+\multido@stuff=\toks56
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks57
+\XKV@tempa@toks=\toks58
+)
+\XKV@depth=\count356
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count357
+\pstFP@xia=\count358
+\pstFP@xib=\count359
+\pstFP@xfa=\count360
+\pstFP@xfb=\count361
+\pstFP@rega=\count362
+\pstFP@regb=\count363
+\pstFP@regs=\count364
+\pstFP@times=\count365
+)
+\psLoopIndex=\count366
+
+`PSTricks' v3.19  <2023/04/30> (tvz,hv)
+\pst@dima=\dimen336
+\pst@dimb=\dimen337
+\pst@dimc=\dimen338
+\pst@dimd=\dimen339
+\pst@dimg=\dimen340
+\pst@dimh=\dimen341
+\pst@dimm=\dimen342
+\pst@dimn=\dimen343
+\pst@dimo=\dimen344
+\pst@dimp=\dimen345
+\pst@hbox=\box84
+\pst@ibox=\box85
+\pst@boxg=\box86
+\pst@cnta=\count367
+\pst@cntb=\count368
+\pst@cntc=\count369
+\pst@cntd=\count370
+\pst@cntg=\count371
+\pst@cnth=\count372
+\pst@cntm=\count373
+\pst@cntn=\count374
+\pst@cnto=\count375
+\pst@cntp=\count376
+\@zero=\count377
+\pst@toks=\toks59
+--- We are running latex or xelatex ---
+(C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-color.tex)
+\psunit=\dimen346
+\psxunit=\dimen347
+\psyunit=\dimen348
+\pst@C@@rType=\count378
+\pslinewidth=\dimen349
+\psk@startLW=\dimen350
+\psk@endLW=\dimen351
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-arrows.tex
+\pshooklength=\dimen352
+\pshookwidth=\dimen353
+)
+\pst@customdefs=\toks60
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-dots.tex)
+\pslinearc=\dimen354
+\pst@symbolStep=\dimen355
+\pst@symbolWidth=\dimen356
+\pst@symbolLinewidth=\dimen357
+\everypsbox=\toks61
+\psframesep=\dimen358
+\pslabelsep=\dimen359
+\sh@wgridXunit=\dimen360
+\sh@wgridYunit=\dimen361
+\pst@shift=\dimen362
+\ps@imagectr=\count379
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con))
+File: pstricks.tex 2023/04/30 v3.19 `PSTricks' (tvz,hv)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+\sx=\dimen363
+\sy=\dimen364
+\hy=\dimen365
+\xx=\dimen366
+\yy=\dimen367
+\xxx=\dimen368
+\yyy=\dimen369
+\nsx=\count380
+\nsy=\count381
+\nhl=\count382
+\nvl=\count383
+\tmp=\count384
+\c@myLabel=\count385
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box84
+\@tempboxb=\box87
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-06-30 L3 programming layer (loader) 
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count386
+\l__pdf_internal_box=\box88
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: csvsimple 2023/05/09 v2.4.0 LaTeX CSV file processing
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple-legacy.sty
+Package: csvsimple-legacy 2023/05/09 version 2.4.0 LaTeX2e CSV file processing
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/04/15 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\csv@file=\read3
+\c@csvinputline=\count387
+\c@csvrow=\count388
+\c@csvcol=\count389
+\csv@out=\write5
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2023-06-12 v3.2.6 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen370
+\l__siunitx_angle_marker_box=\box89
+\l__siunitx_angle_unit_box=\box90
+\l__siunitx_compound_count_int=\count390
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count391
+\l__siunitx_number_min_decimal_int=\count392
+\l__siunitx_number_min_integer_int=\count393
+\l__siunitx_number_round_precision_int=\count394
+\l__siunitx_number_lower_threshold_int=\count395
+\l__siunitx_number_upper_threshold_int=\count396
+\l__siunitx_number_group_first_int=\count397
+\l__siunitx_number_group_size_int=\count398
+\l__siunitx_number_group_minimum_int=\count399
+\l__siunitx_table_tmp_box=\box91
+\l__siunitx_table_tmp_dim=\dimen371
+\l__siunitx_table_column_width_dim=\dimen372
+\l__siunitx_table_integer_box=\box92
+\l__siunitx_table_decimal_box=\box93
+\l__siunitx_table_uncert_box=\box94
+\l__siunitx_table_before_box=\box95
+\l__siunitx_table_after_box=\box96
+\l__siunitx_table_before_dim=\dimen373
+\l__siunitx_table_carry_dim=\dimen374
+\l__siunitx_unit_tmp_int=\count400
+\l__siunitx_unit_position_int=\count401
+\l__siunitx_unit_total_int=\count402
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
@@ -691,17 +844,17 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen336
+\arrowsize=\dimen375
 )) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks56
-\inpenc@posthook=\toks57
+\inpenc@prehook=\toks62
+\inpenc@posthook=\toks63
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 18.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 22.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -712,17 +865,9 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 \symboldpureletters=\mathgroup10
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
+)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks58
-\XKV@tempa@toks=\toks59
-)
-\XKV@depth=\count358
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 
@@ -730,7 +875,7 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeMadrid.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerounded.sty) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\palatino.sty
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeMadrid.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerounded.sty) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\palatino.sty
 Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/opensans\opensans.sty
 Package: opensans 2019/06/20 Style file for Open Sans.
@@ -751,17 +896,14 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemecircles.sty)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 157.
 LaTeX Font Info:    Trying to load font information for T1+opensans-TLF on input line 157.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/opensans\t1opensans-tlf.fd
 File: T1opensans-TLF.fd 2019/06/24 Font definitions for T1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 157.
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count359
-\l__pdf_internal_box=\box85
-) (slides.aux)
+ (slides.aux)
 \openout1 = `slides.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
@@ -819,17 +961,17 @@ LaTeX Font Info:    ... okay on input line 157.
 
 (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count360
-\scratchdimen=\dimen337
-\scratchbox=\box86
-\nofMPsegments=\count361
-\nofMParguments=\count362
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count363
-\MPscratchDim=\dimen338
-\MPnumerator=\count364
-\makeMPintoPDFobject=\count365
-\everyMPtoPDFconversion=\toks61
+\scratchcounter=\count403
+\scratchdimen=\dimen376
+\scratchbox=\box97
+\nofMPsegments=\count404
+\nofMParguments=\count405
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count406
+\MPscratchDim=\dimen377
+\MPnumerator=\count407
+\makeMPintoPDFobject=\count408
+\everyMPtoPDFconversion=\toks65
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -838,8 +980,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 157.
  (slides.out) (slides.out)
-\@outlinefile=\write5
-\openout5 = `slides.out'.
+\@outlinefile=\write6
+\openout6 = `slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 157.
@@ -913,9 +1055,13 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
  on input line 157.
 
-\c@mv@tabular=\count366
-\c@mv@boldtabular=\count367
-(slides.nav)
+(C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 157.
+\c@mv@tabular=\count409
+\c@mv@boldtabular=\count410
+ (slides.nav)
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 157.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
@@ -927,154 +1073,173 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 4.0pt on input line 165.
  [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
 
-{C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/opensans/a_jg4h6q.enc}] (slides.toc) [2
-
-]
-<images/pointer_chase_capture_mod.png, id=131, 581.67313pt x 213.79875pt>
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+{C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/opensans/a_jg4h6q.enc}]
+<images/pointer_chase_capture_mod.png, id=82, 581.67313pt x 213.79875pt>
 File: images/pointer_chase_capture_mod.png Graphic file (type png)
 <use images/pointer_chase_capture_mod.png>
-Package pdftex.def Info: images/pointer_chase_capture_mod.png  used on input line 195.
+Package pdftex.def Info: images/pointer_chase_capture_mod.png  used on input line 187.
 (pdftex.def)             Requested size: 349.00656pt x 128.28023pt.
 
-Overfull \hbox (6.57124pt too wide) in paragraph at lines 195--195
+Overfull \hbox (6.57124pt too wide) in paragraph at lines 187--187
  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 195.
-[3
+(Font)              scaled to size 10.0pt on input line 187.
+[2
 
  <./images/pointer_chase_capture_mod.png>]
-<plot/code_ccm_energy.pdf, id=161, 482.91216pt x 234.20097pt>
+<plot/code_ccm_energy.pdf, id=112, 482.91216pt x 234.20097pt>
 File: plot/code_ccm_energy.pdf Graphic file (type pdf)
 <use plot/code_ccm_energy.pdf>
-Package pdftex.def Info: plot/code_ccm_energy.pdf  used on input line 207.
+Package pdftex.def Info: plot/code_ccm_energy.pdf  used on input line 198.
+(pdftex.def)             Requested size: 338.0362pt x 163.93956pt.
+ [3
+
+ <./plot/code_ccm_energy.pdf>]
+<plot/code_ccm_runtime.pdf, id=221, 482.91216pt x 234.20097pt>
+File: plot/code_ccm_runtime.pdf Graphic file (type pdf)
+<use plot/code_ccm_runtime.pdf>
+Package pdftex.def Info: plot/code_ccm_runtime.pdf  used on input line 207.
 (pdftex.def)             Requested size: 338.0362pt x 163.93956pt.
  [4
 
- <./plot/code_ccm_energy.pdf>]
-<plot/code_ccm_runtime.pdf, id=270, 482.91216pt x 234.20097pt>
-File: plot/code_ccm_runtime.pdf Graphic file (type pdf)
-<use plot/code_ccm_runtime.pdf>
-Package pdftex.def Info: plot/code_ccm_runtime.pdf  used on input line 217.
-(pdftex.def)             Requested size: 338.0362pt x 163.93956pt.
- [5
-
  <./plot/code_ccm_runtime.pdf>]
-<plot/code_ccm_intensity.pdf, id=368, 482.91216pt x 234.20299pt>
+<plot/code_ccm_intensity.pdf, id=318, 482.91216pt x 234.20299pt>
 File: plot/code_ccm_intensity.pdf Graphic file (type pdf)
 <use plot/code_ccm_intensity.pdf>
-Package pdftex.def Info: plot/code_ccm_intensity.pdf  used on input line 227.
+Package pdftex.def Info: plot/code_ccm_intensity.pdf  used on input line 216.
 (pdftex.def)             Requested size: 338.0362pt x 163.94096pt.
- [6
+ [5
 
  <./plot/code_ccm_intensity.pdf>]
-<images/wait_state_impact.png, id=471, 501.37312pt x 286.06876pt>
+<images/wait_state_impact.png, id=420, 501.37312pt x 286.06876pt>
 File: images/wait_state_impact.png Graphic file (type png)
 <use images/wait_state_impact.png>
-Package pdftex.def Info: images/wait_state_impact.png  used on input line 238.
+Package pdftex.def Info: images/wait_state_impact.png  used on input line 226.
 (pdftex.def)             Requested size: 350.95879pt x 200.24675pt.
 
-Overfull \hbox (8.52347pt too wide) in paragraph at lines 238--238
+Overfull \hbox (8.52347pt too wide) in paragraph at lines 226--226
  [] 
  []
 
 
-Overfull \vbox (46.48766pt too high) detected at line 238
+Overfull \vbox (32.88765pt too high) detected at line 226
  []
 
-[7
+[6
 
- <./images/wait_state_impact.png>]
-LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 265.
- [8
-
-]
-LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 288.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 288.
+ <./images/wait_state_impact.png>] (plot/table_energy_code_ccm.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 288.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 288.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 3.
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 288.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 288.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 288.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 288.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 288.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 288.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 288.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 288.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 288.
-LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 288.
- [9
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 3.
+) [7
 
-] [10
+] (plot/table_energy_flash.tex) [8
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 341.
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [11
-
-{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 359.
- [12
-
-] [13
+LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 256.
+ [9
 
 ]
 \openout4 = `slides.vrb'.
 
- (slides.vrb) [14
+ (slides.vrb
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <5> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <5> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 19.
+) [10
 
-] [15
+{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+\openout4 = `slides.vrb'.
 
-] [16
+ (slides.vrb
+<schedule/edf.pdf, id=598, 313.63272pt x 124.02937pt>
+File: schedule/edf.pdf Graphic file (type pdf)
+<use schedule/edf.pdf>
+Package pdftex.def Info: schedule/edf.pdf  used on input line 3.
+(pdftex.def)             Requested size: 313.63194pt x 124.02905pt.
+) [11
 
-]
-LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 425.
- [17
+ <./schedule/edf.pdf>]
+\openout4 = `slides.vrb'.
 
- <C:/Users/loict/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>] [18
+ (slides.vrb
+<schedule/offline_algo.pdf, id=645, 313.63272pt x 124.02937pt>
+File: schedule/offline_algo.pdf Graphic file (type pdf)
+<use schedule/offline_algo.pdf>
+Package pdftex.def Info: schedule/offline_algo.pdf  used on input line 3.
+(pdftex.def)             Requested size: 313.63194pt x 124.02905pt.
+) [12
+
+ <./schedule/offline_algo.pdf>] [13
+
+] [14
 
 ]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 470.
+(Font)              scaled to size 24.88pt on input line 344.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 470.
- [19
+(Font)              scaled to size 17.28pt on input line 344.
+ [15
 
 ]
-\tf@nav=\write6
-\openout6 = `slides.nav'.
+\tf@nav=\write7
+\openout7 = `slides.nav'.
 
-\tf@toc=\write7
-\openout7 = `slides.toc'.
+\tf@toc=\write8
+\openout8 = `slides.toc'.
 
-\tf@snm=\write8
-\openout8 = `slides.snm'.
+\tf@snm=\write9
+\openout9 = `slides.snm'.
 
  (slides.aux)
  ***********
@@ -1082,20 +1247,20 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: 2D3B6C3405407A546F415488B3997B2B;1118.
+(rerunfilecheck)             Checksum: 286EA23FE9B6C2D1F4C4F497F43BCF46;1207.
  ) 
 Here is how much of TeX's memory you used:
- 37836 strings out of 475551
- 914119 string characters out of 5762554
+ 43393 strings out of 475551
+ 1060324 string characters out of 5762554
  1933238 words of memory out of 5000000
- 58234 multiletter control sequences out of 15000+600000
- 597085 words of font info for 105 fonts, out of 8000000 for 9000
+ 63733 multiletter control sequences out of 15000+600000
+ 605805 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,789b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Bold.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Italic.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on slides.pdf (19 pages, 450526 bytes).
+ 128i,15n,123p,789b,915s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Italic.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on slides.pdf (15 pages, 459931 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 540 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 886 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 378 words of extra memory for PDF output out of 10000 (max. 10000000)
 

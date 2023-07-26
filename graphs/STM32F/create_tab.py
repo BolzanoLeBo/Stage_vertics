@@ -4,8 +4,6 @@ import os
 import sys
 import pandas as pd
 import numpy as np
-import openpyxl
-import xlsxwriter
 def extract_line(path, unity) : 
     with open(path, 'r') as ref : 
         reader = csv.reader(ref, delimiter = '\t')

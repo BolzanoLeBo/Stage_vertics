@@ -1,11 +1,5 @@
-\frametitle{Verbatim}
+\frametitle{ Application of the previous algorithm }
+	\begin{figure}
+		\includegraphics{schedule/offline_algo.pdf}
+	\end{figure}
 	
-	\begin{example}[Theorem Slide Code]
-		\begin{verbatim}
-			\begin{frame}
-				\frametitle{Theorem}
-				\begin{theorem}[Mass--energy equivalence]
-					$E = mc^2$
-				\end{theorem}
-		\end{frame}\end{verbatim} % Must be on the same line
-	\end{example}

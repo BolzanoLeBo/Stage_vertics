@@ -1,4 +1,4 @@
 3
 24 48 72
-4
-CF_roF CC_roF CF_roC CC_roC
+6
+CF_roF CC_roF CF_roC CC_roC CF_roR CC_roR

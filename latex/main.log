@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  21 JUL 2023 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.13)  28 JUL 2023 06:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -182,36 +182,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
-)
-\c@ALC@unique=\count278
-\c@ALC@line=\count279
-\c@ALC@rem=\count280
-\c@ALC@depth=\count281
-\ALC@tlm=\skip54
-\algorithmicindent=\skip55
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen173
-\Gin@req@width=\dimen174
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
@@ -219,7 +190,9 @@ Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -230,16 +203,32 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen175
-\pgfutil@tempdimb=\dimen176
+\pgfutil@everybye=\toks23
+\pgfutil@tempdima=\dimen173
+\pgfutil@tempdimb=\dimen174
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box55
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks25
@@ -259,14 +248,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen186
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count282
-\c@pgf@countb=\count283
-\c@pgf@countc=\count284
-\c@pgf@countd=\count285
+\c@pgf@counta=\count278
+\c@pgf@countb=\count279
+\c@pgf@countc=\count280
+\c@pgf@countd=\count281
 \t@pgf@toka=\toks28
 \t@pgf@tokb=\toks29
 \t@pgf@tokc=\toks30
-\pgf@sys@id@count=\count286
+\pgf@sys@id@count=\count282
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -277,21 +266,21 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count287
-\pgfsyssoftpath@bigbuffer@items=\count288
+\pgfsyssoftpath@smallbuffer@items=\count283
+\pgfsyssoftpath@bigbuffer@items=\count284
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen187
-\pgfmath@count=\count289
+\pgfmath@count=\count285
 \pgfmath@box=\box56
 \pgfmath@toks=\toks31
 \pgfmath@stack@operand=\toks32
 \pgfmath@stack@operation=\toks33
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count290
+\c@pgfmathroundto@lastzeros=\count286
 )) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen188
@@ -321,7 +310,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count291
+\pgf@picture@serial@count=\count287
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen262
@@ -342,8 +331,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen267
-\pgf@sys@shading@range@num=\count292
-\pgf@shadingcount=\count293
+\pgf@sys@shading@range@num=\count288
+\pgf@shadingcount=\count289
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
@@ -378,7 +367,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count294
+\pgf@plot@mark@count=\count290
 \pgfplotmarksize=\dimen272
 )
 \tikz@lastx=\dimen273
@@ -393,17 +382,17 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count295
-\tikznumberofchildren=\count296
-\tikznumberofcurrentchild=\count297
-\tikz@fig@count=\count298
+\tikztreelevel=\count291
+\tikznumberofchildren=\count292
+\tikznumberofcurrentchild=\count293
+\tikz@fig@count=\count294
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count299
-\pgfmatrixcurrentcolumn=\count300
-\pgf@matrix@numberofcolumns=\count301
+\pgfmatrixcurrentrow=\count295
+\pgfmatrixcurrentcolumn=\count296
+\pgf@matrix@numberofcolumns=\count297
 )
-\tikz@expandcount=\count302
+\tikz@expandcount=\count298
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
@@ -413,33 +402,33 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@tokb=\toks37
 \t@pgfplots@tokc=\toks38
 \pgfplots@tmpa=\dimen281
-\c@pgfplots@coordindex=\count303
-\c@pgfplots@scanlineindex=\count304
+\c@pgfplots@coordindex=\count299
+\c@pgfplots@scanlineindex=\count300
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks39
 \t@pgf@tokb=\toks40
 \t@pgf@tokc=\toks41
 (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count305
+\c@pgfplotsarray@tmp=\count301
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count306
+\c@pgfplotstable@counta=\count302
 \t@pgfplotstable@a=\toks42
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count307
+\c@pgfplotslibrarysurf@no=\count303
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen282
 \pgfdecoratedremainingdistance=\dimen283
 \pgfdecoratedinputsegmentcompleteddistance=\dimen284
 \pgfdecoratedinputsegmentremainingdistance=\dimen285
 \pgf@decorate@distancetomove=\dimen286
-\pgf@decorate@repeatstate=\count308
+\pgf@decorate@repeatstate=\count304
 \pgfdecorationsegmentamplitude=\dimen287
 \pgfdecorationsegmentlength=\dimen288
 )
 \tikz@lib@dec@box=\box66
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count309
+\pgfplots@numplots=\count305
 \pgfplots@xmin@reg=\dimen289
 \pgfplots@xmax@reg=\dimen290
 \pgfplots@ymin@reg=\dimen291
@@ -458,69 +447,181 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box67
 \extrarowheight=\dimen296
 \NC@list=\toks43
-\extratabsurround=\skip56
-\backup@length=\skip57
+\extratabsurround=\skip54
+\backup@length=\skip55
 \ar@cellbox=\box68
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threeparttable.sty
+)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/rtsched\rtsched.sty
+Package: rtsched 2005/01/01
+
+'rtsched' style for Latex and PSTricks
+Easily draw real-time schedules in TeX/Latex.
+(c) 2005, Giuseppe Lipari, Pisa, Italy (g.lipari@sssup.it)
+Version 1.0
+(C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex  v1.42, 2010/05/14 <tvz>
+\multido@count=\count306
+\multidocount=\count307
+\multido@stuff=\toks44
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks45
+\XKV@tempa@toks=\toks46
+)
+\XKV@depth=\count308
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count309
+\pstFP@xia=\count310
+\pstFP@xib=\count311
+\pstFP@xfa=\count312
+\pstFP@xfb=\count313
+\pstFP@rega=\count314
+\pstFP@regb=\count315
+\pstFP@regs=\count316
+\pstFP@times=\count317
+)
+\psLoopIndex=\count318
+
+`PSTricks' v3.19  <2023/04/30> (tvz,hv)
+\pst@dima=\dimen297
+\pst@dimb=\dimen298
+\pst@dimc=\dimen299
+\pst@dimd=\dimen300
+\pst@dimg=\dimen301
+\pst@dimh=\dimen302
+\pst@dimm=\dimen303
+\pst@dimn=\dimen304
+\pst@dimo=\dimen305
+\pst@dimp=\dimen306
+\pst@hbox=\box69
+\pst@ibox=\box70
+\pst@boxg=\box71
+\pst@cnta=\count319
+\pst@cntb=\count320
+\pst@cntc=\count321
+\pst@cntd=\count322
+\pst@cntg=\count323
+\pst@cnth=\count324
+\pst@cntm=\count325
+\pst@cntn=\count326
+\pst@cnto=\count327
+\pst@cntp=\count328
+\@zero=\count329
+\pst@toks=\toks47
+--- We are running latex or xelatex ---
+(C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-color.tex)
+\psunit=\dimen307
+\psxunit=\dimen308
+\psyunit=\dimen309
+\pst@C@@rType=\count330
+\pslinewidth=\dimen310
+\psk@startLW=\dimen311
+\psk@endLW=\dimen312
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-arrows.tex
+\pshooklength=\dimen313
+\pshookwidth=\dimen314
+)
+\pst@customdefs=\toks48
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-dots.tex)
+\pslinearc=\dimen315
+\pst@symbolStep=\dimen316
+\pst@symbolWidth=\dimen317
+\pst@symbolLinewidth=\dimen318
+\everypsbox=\toks49
+\psframesep=\dimen319
+\pslabelsep=\dimen320
+\sh@wgridXunit=\dimen321
+\sh@wgridYunit=\dimen322
+\pst@shift=\dimen323
+\ps@imagectr=\count331
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con))
+File: pstricks.tex 2023/04/30 v3.19 `PSTricks' (tvz,hv)
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+\sx=\dimen324
+\sy=\dimen325
+\hy=\dimen326
+\xx=\dimen327
+\yy=\dimen328
+\xxx=\dimen329
+\yyy=\dimen330
+\nsx=\count332
+\nsy=\count333
+\nhl=\count334
+\nvl=\count335
+\tmp=\count336
+\c@myLabel=\count337
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box69
+\@tempboxb=\box72
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2023-06-30 L3 programming layer (loader) 
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
-\l__pdf_internal_box=\box70
+\l__color_backend_stack_int=\count338
+\l__pdf_internal_box=\box73
 ))
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
 Package: csvsimple 2023/05/09 v2.4.0 LaTeX CSV file processing
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple-legacy.sty
 Package: csvsimple-legacy 2023/05/09 version 2.4.0 LaTeX2e CSV file processing
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count311
+\etb@tempcnta=\count339
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2023/04/15 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \csv@file=\read3
-\c@csvinputline=\count312
-\c@csvrow=\count313
-\c@csvcol=\count314
+\c@csvinputline=\count340
+\c@csvrow=\count341
+\c@csvcol=\count342
 \csv@out=\write4
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen297
-\lightrulewidth=\dimen298
-\cmidrulewidth=\dimen299
-\belowrulesep=\dimen300
-\belowbottomsep=\dimen301
-\aboverulesep=\dimen302
-\abovetopsep=\dimen303
-\cmidrulesep=\dimen304
-\cmidrulekern=\dimen305
-\defaultaddspace=\dimen306
-\@cmidla=\count315
-\@cmidlb=\count316
-\@aboverulesep=\dimen307
-\@belowrulesep=\dimen308
-\@thisruleclass=\count317
-\@lastruleclass=\count318
-\@thisrulewidth=\dimen309
+\heavyrulewidth=\dimen331
+\lightrulewidth=\dimen332
+\cmidrulewidth=\dimen333
+\belowrulesep=\dimen334
+\belowbottomsep=\dimen335
+\aboverulesep=\dimen336
+\abovetopsep=\dimen337
+\cmidrulesep=\dimen338
+\cmidrulekern=\dimen339
+\defaultaddspace=\dimen340
+\@cmidla=\count343
+\@cmidlb=\count344
+\@aboverulesep=\dimen341
+\@belowrulesep=\dimen342
+\@thisruleclass=\count345
+\@lastruleclass=\count346
+\@thisrulewidth=\dimen343
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2023-06-12 v3.2.6 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen310
-\l__siunitx_angle_marker_box=\box71
-\l__siunitx_angle_unit_box=\box72
-\l__siunitx_compound_count_int=\count319
+\l__siunitx_angle_tmp_dim=\dimen344
+\l__siunitx_angle_marker_box=\box74
+\l__siunitx_angle_unit_box=\box75
+\l__siunitx_compound_count_int=\count347
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -528,28 +629,28 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_number_exponent_fixed_int=\count320
-\l__siunitx_number_min_decimal_int=\count321
-\l__siunitx_number_min_integer_int=\count322
-\l__siunitx_number_round_precision_int=\count323
-\l__siunitx_number_lower_threshold_int=\count324
-\l__siunitx_number_upper_threshold_int=\count325
-\l__siunitx_number_group_first_int=\count326
-\l__siunitx_number_group_size_int=\count327
-\l__siunitx_number_group_minimum_int=\count328
-\l__siunitx_table_tmp_box=\box73
-\l__siunitx_table_tmp_dim=\dimen311
-\l__siunitx_table_column_width_dim=\dimen312
-\l__siunitx_table_integer_box=\box74
-\l__siunitx_table_decimal_box=\box75
-\l__siunitx_table_uncert_box=\box76
-\l__siunitx_table_before_box=\box77
-\l__siunitx_table_after_box=\box78
-\l__siunitx_table_before_dim=\dimen313
-\l__siunitx_table_carry_dim=\dimen314
-\l__siunitx_unit_tmp_int=\count329
-\l__siunitx_unit_position_int=\count330
-\l__siunitx_unit_total_int=\count331
+\l__siunitx_number_exponent_fixed_int=\count348
+\l__siunitx_number_min_decimal_int=\count349
+\l__siunitx_number_min_integer_int=\count350
+\l__siunitx_number_round_precision_int=\count351
+\l__siunitx_number_lower_threshold_int=\count352
+\l__siunitx_number_upper_threshold_int=\count353
+\l__siunitx_number_group_first_int=\count354
+\l__siunitx_number_group_size_int=\count355
+\l__siunitx_number_group_minimum_int=\count356
+\l__siunitx_table_tmp_box=\box76
+\l__siunitx_table_tmp_dim=\dimen345
+\l__siunitx_table_column_width_dim=\dimen346
+\l__siunitx_table_integer_box=\box77
+\l__siunitx_table_decimal_box=\box78
+\l__siunitx_table_uncert_box=\box79
+\l__siunitx_table_before_box=\box80
+\l__siunitx_table_after_box=\box81
+\l__siunitx_table_before_dim=\dimen347
+\l__siunitx_table_carry_dim=\dimen348
+\l__siunitx_unit_tmp_int=\count357
+\l__siunitx_unit_position_int=\count358
+\l__siunitx_unit_total_int=\count359
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
@@ -560,11 +661,11 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen315
+\arrowsize=\dimen349
 )) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks44
-\inpenc@posthook=\toks45
+\inpenc@prehook=\toks50
+\inpenc@posthook=\toks51
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 112.
@@ -582,61 +683,9 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count332
-\float@exts=\toks46
-\float@box=\box79
-\@float@everytoks=\toks47
-\@floatcapt=\box80
-)
-\@float@every@algorithm=\toks48
-\c@algorithm=\count333
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
-Package: algpseudocode 
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
-Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
-
-Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count334
-\c@ALG@rem=\count335
-\c@ALG@nested=\count336
-\ALG@tlm=\skip58
-\ALG@thistlm=\skip59
-\c@ALG@Lnr=\count337
-\c@ALG@blocknr=\count338
-\c@ALG@storecount=\count339
-\c@ALG@tmpcounter=\count340
-\ALG@tmplength=\skip60
-
-C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty:112: LaTeX Error: Command \algorithmic already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112    }
-          %
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
-Document Style - pseudocode environments for use with the `algorithmicx' style
-) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
+)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks49
-\XKV@tempa@toks=\toks50
-)
-\XKV@depth=\count341
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+ (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 
@@ -644,38 +693,42 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
-)) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
  (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen316
-\captionmargin=\dimen317
-\caption@leftmargin=\dimen318
-\caption@rightmargin=\dimen319
-\caption@width=\dimen320
-\caption@indent=\dimen321
-\caption@parindent=\dimen322
-\caption@hangindent=\dimen323
+\caption@tempdima=\dimen350
+\captionmargin=\dimen351
+\caption@leftmargin=\dimen352
+\caption@rightmargin=\dimen353
+\caption@width=\dimen354
+\caption@indent=\dimen355
+\caption@parindent=\dimen356
+\caption@hangindent=\dimen357
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1176.
 )
-\c@KVtest=\count342
-\sf@farskip=\skip61
-\sf@captopadj=\dimen324
-\sf@capskip=\skip62
-\sf@nearskip=\skip63
-\c@subfigure=\count343
-\c@subfigure@save=\count344
-\c@lofdepth=\count345
-\c@subtable=\count346
-\c@subtable@save=\count347
-\c@lotdepth=\count348
-\sf@top=\skip64
-\sf@bottom=\skip65
+\c@KVtest=\count360
+\sf@farskip=\skip56
+\sf@captopadj=\dimen358
+\sf@capskip=\skip57
+\sf@nearskip=\skip58
+\c@subfigure=\count361
+\c@subfigure@save=\count362
+\c@lofdepth=\count363
+\c@subtable=\count364
+\c@subtable@save=\count365
+\c@lotdepth=\count366
+\sf@top=\skip59
+\sf@bottom=\skip60
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 28.
- (main.aux)
+ (main.aux
+
+LaTeX Warning: Label `fig:code_ccm_intensity' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -696,17 +749,17 @@ LaTeX Font Info:    ... okay on input line 28.
 -- Lines per column: 56 (exact).
 (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
-\scratchdimen=\dimen325
-\scratchbox=\box81
-\nofMPsegments=\count350
-\nofMParguments=\count351
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count352
-\MPscratchDim=\dimen326
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count367
+\scratchdimen=\dimen359
+\scratchbox=\box82
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen360
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks53
 ) (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -732,23 +785,11 @@ LaTeX Warning: No \author given.
 
 LaTeX Warning: No \author given.
 
-
-LaTeX Warning: Citation `mem_alloc' on page 1 undefined on input line 38.
-
-
-LaTeX Warning: Citation `low_power' on page 1 undefined on input line 58.
-
 <images/pointer_chase_capture_mod.png, id=4, 581.67313pt x 213.79875pt>
 File: images/pointer_chase_capture_mod.png Graphic file (type png)
 <use images/pointer_chase_capture_mod.png>
 Package pdftex.def Info: images/pointer_chase_capture_mod.png  used on input line 73.
 (pdftex.def)             Requested size: 465.33913pt x 171.03922pt.
-
-LaTeX Warning: Citation `mem_alloc' on page 1 undefined on input line 100.
-
-
-LaTeX Warning: Citation `benchmark' on page 1 undefined on input line 101.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
 (C:\Users\loict\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -772,37 +813,51 @@ File: plot/code_ccm_runtime.pdf Graphic file (type pdf)
 <use plot/code_ccm_runtime.pdf>
 Package pdftex.def Info: plot/code_ccm_runtime.pdf  used on input line 136.
 (pdftex.def)             Requested size: 482.91096pt x 234.2004pt.
- [1{C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+ [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+{C:/Users/loict/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 
 ] [2 <./images/pointer_chase_capture_mod.png> <./plot/code_ccm_energy.pdf>] [3 <./plot/code_ccm_intensity.pdf> <./plot/code_ccm_runtime.pdf>]
-
-LaTeX Warning: Reference `fig:code_ccm_energy' on page 4 undefined on input line 145.
-
-
-LaTeX Warning: Reference `fig:code_ccm_intensity' on page 4 undefined on input line 147.
-
-
-LaTeX Warning: Citation `mem_alloc' on page 4 undefined on input line 147.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
+
+ []
 
 
-LaTeX Warning: Citation `mem_alloc' on page 4 undefined on input line 161.
+Overfull \hbox (94.69322pt too wide) detected at line 296
+[]
+ []
 
 
-LaTeX Warning: Citation `pwr_clock' on page 4 undefined on input line 209.
+Overfull \hbox (79.62166pt too wide) detected at line 309
+[]
+ []
 
-[4
-
-] (main.bbl
+(main.bbl
 Underfull \hbox (badness 1472) in paragraph at lines 16--19
 []\T1/ptm/m/n/8 Tacle bench-marks.  $https : / / github\OML/cmm/m/it/8 :\T1/ptm/m/n/8 com / tacle / tacle -[] bench$.  Ac-cessed
  []
 
-)
+[5])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -814,7 +869,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
+[6
 
 ] (main.aux)
  ***********
@@ -823,24 +878,21 @@ L3 programming layer <2023-06-30>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32677 strings out of 475551
- 845587 string characters out of 5762554
- 1935238 words of memory out of 5000000
- 53361 multiletter control sequences out of 15000+600000
+ 33777 strings out of 475551
+ 862705 string characters out of 5762554
+ 1946238 words of memory out of 5000000
+ 54439 multiletter control sequences out of 15000+600000
  671751 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,8n,117p,787b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 317729 bytes).
+ 107i,12n,117p,787b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/loict/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 350575 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

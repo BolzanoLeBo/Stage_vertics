@@ -2,9 +2,11 @@ import time
 import gurobipy as gp
 from gurobipy import GRB
 import numpy as np
+import os
 from multiprocessing import Pool
 
-from gen_taskset import gen_taskset
+
+from gen_taskset import *
 
 def solver(taskset) : 
     n = len(taskset)
@@ -15,7 +17,7 @@ def solver(taskset) :
     model.setParam('Threads', 1)
 
     x_f = model.addVars(n,3, vtype = GRB.BINARY)
-    x_c = model.addVars(n,2, vtype = GRB.BINARY)
+    x_p = model.addVars(n,2, vtype = GRB.BINARY)
     x_d = model.addVars(n,3, vtype = GRB.BINARY)
     x_ro = model.addVars(n,4, vtype = GRB.BINARY)
 
@@ -25,7 +27,7 @@ def solver(taskset) :
 
     
     muldro = []
-    for i in range(3) : 
+    for i in range(2) : 
         muldro.append(model.addVars(n,4,vtype = GRB.BINARY))
 
     '''
@@ -34,14 +36,13 @@ def solver(taskset) :
         010 48
         001 72
 
-        x_c : 
+        x_p : 
         10 cf 
         01 cc
 
         x_d : 
-        100 no_d 
-        010 dr
-        001 dc
+        10 no_d 
+        01 dr
 
         x_ro : 
         1000 no_ro 
@@ -54,53 +55,52 @@ def solver(taskset) :
     #var dimension 
     #no multiple allocation
     model.addConstrs(gp.quicksum(x_f[i,j] for j in range(3) )== 1 for i in range(n))
-    model.addConstrs(gp.quicksum(x_c[i,j] for j in range(2) )== 1 for i in range(n))
-    model.addConstrs(gp.quicksum(x_d[i,j] for j in range(3) )== 1 for i in range(n))
+    model.addConstrs(gp.quicksum(x_p[i,j] for j in range(2) )== 1 for i in range(n))
+    model.addConstrs(gp.quicksum(x_d[i,j] for j in range(2) )== 1 for i in range(n))
     model.addConstrs(gp.quicksum(x_ro[i,j] for j in range(4) )== 1 for i in range(n))
     #FLASH size constraint
     #we can have instruction or ro data
-    model.addConstr(gp.quicksum(taskset[i].size_i * x_c[i,0] + 
-                                taskset[i].size_ro * x_c[i,1] 
+    model.addConstr(gp.quicksum((taskset[i].size_i * x_p[i,0] + 
+                                taskset[i].size_ro * x_ro[i,1]) 
                                 for i in range(n)) <= taskset.flash_size)
     #CCM size constraint
-    #we can have instruction, ro data or input data
-    model.addConstr(gp.quicksum(taskset[i].size_i * x_c[i,1] + 
-                                taskset[i].size_ro * x_ro[i,3] +
-                                taskset[i].size_d * x_d[i,2] 
+    #we can have instruction or ro data
+    model.addConstr(gp.quicksum((taskset[i].size_i * x_p[i,1] + 
+                                taskset[i].size_ro * x_ro[i,3])
                                 for i in range(n)) <= taskset.ccm_size)
     #SRAM size constraint 
     #we can have input data or ro data 
-    model.addConstr(gp.quicksum(taskset[i].size_ro * x_ro[i,2] +
-                                taskset[i].size_d * x_d[i,1] 
+    model.addConstr(gp.quicksum(taskset[i].size_ro * x_ro[i,2]
+                                #+ taskset[i].size_d * x_d[i,1]
                                 for i in range(n)) <= taskset.ram_size)
     
     #we cannot multiply more than 3 elements so we do pre-mutliplication
-    model.addConstrs(mulfc[f][i,c] == x_f[i,f]*x_c[i,c] 
+    model.addConstrs(mulfc[f][i,p] == x_f[i,f]*x_p[i,p] 
                   for i in range (n) 
                   for f in range (3)
-                  for c in range (2))
+                  for p in range (2))
     
     model.addConstrs(muldro[d][i,ro] == x_d[i,d]*x_ro[i,ro] 
                   for i in range (n) 
-                  for d in range (3)
+                  for d in range (2)
                   for ro in range (4))
     
     #utilization less than 1 
-    model.addConstr(gp.quicksum((taskset[i].perf[f][c][d][ro][0]/taskset[i].period)
-                                 *mulfc[f][i,c]*muldro[d][i,ro]  
+    model.addConstr(gp.quicksum((taskset[i].perf[f][p][d][ro][0]/taskset[i].period)
+                                 *mulfc[f][i,p]*muldro[d][i,ro]  
                 for f in range(3) 
-                for c in range(2) 
-                for d in range(3) 
+                for p in range(2) 
+                for d in range(2) 
                 for ro in range(4) 
                 for i in range (n)
                 ) <= 1 )
 
     #minimize the energy
     model.setObjective(
-    gp.quicksum((taskset[i].perf[f][c][d][ro][1]*mulfc[f][i,c]*muldro[d][i,ro])  
+    gp.quicksum((taskset[i].perf[f][p][d][ro][1]*mulfc[f][i,p]*muldro[d][i,ro])  
                 for f in range(3) 
-                for c in range(2) 
-                for d in range(3) 
+                for p in range(2) 
+                for d in range(2) 
                 for ro in range(4) 
                 for i in range (n))
     ,
@@ -108,38 +108,103 @@ def solver(taskset) :
 
 
     model.optimize()
+
+    
+    if model.Status == GRB.INF_OR_UNBD:
+        raise Exception('Model is infeasible or unbounded')
+    elif model.Status == GRB.INFEASIBLE:
+        raise Exception('Model is infeasible')
+    elif model.Status == GRB.UNBOUNDED:
+        raise Exception('Model is unbounded')
     x_f_sol = model.getAttr("x", x_f)
-    x_c_sol = model.getAttr("x", x_c)
+    x_p_sol = model.getAttr("x", x_p)
     x_d_sol = model.getAttr("x", x_d)
     x_ro_sol = model.getAttr("x", x_ro)
-    
+
+
+    error = 0
     f_str = ["24", "48", "72"]
     c_str = ["code Flash", "code CCM"]
-    d_str = ["no Idata", "data ram", "data ccm"]
+    d_str = ["no Idata", "data ram"]
     ro_str = ["no ro", "ro FLASH", "ro RAM", "ro CCM"]
     U_tot = 0
+    E_tot = 0
+    E_ref = 0
+
+    ccm_used = 0
+    flash_used = 0
+    ram_used = 0
     for i in range (n) : 
         x_index = [0,0,0,0]
         for j in range (4) : 
             if j < 3 : 
-                if x_f_sol[i,j] > 0 : 
+                if x_f_sol[i,j] > 1-1e-6 : 
                     x_index[0] = j
-                if x_d_sol[i,j] > 0 : 
-                    x_index[2] = j
+                
             if j < 2 : 
-                if x_c_sol[i,j] > 0 : 
+                if x_p_sol[i,j] > 1-1e-6 : 
                     x_index[1] = j
-
-            if x_ro_sol[i,j] > 0 : 
+                    if j == 1 : 
+                        ccm_used += taskset[i].size_i
+                    else : 
+                        flash_used += taskset[i].size_i
+                    
+                if x_d_sol[i,j] > 1-1e-6 : 
+                    x_index[2] = j
+                    '''if j == 1 : 
+                        ram_used += taskset[i].size_d'''
+            if x_ro_sol[i,j] > 1-1e-6 : 
                 x_index[3] = j      
+                if j == 1 : 
+                    flash_used += taskset[i].size_ro
+                elif j == 2 : 
+                    ram_used += taskset[i].size_ro
+                elif j == 3 :
+                    ccm_used += taskset[i].size_ro 
         f, c, d, ro = x_index      
-        print(taskset[i].name, f_str[f],
-            c_str[c], d_str[d],ro_str[ro])
+        #print(taskset[i].name," : ", f_str[f]," | ",c_str[c]," | ", d_str[d]," | ",ro_str[ro])
+        #in the case where an unexistant config is taken 
+        if taskset[i].perf[f][c][d][ro][0] > 8000 :
+           error = 1
         util = taskset[i].perf[f][c][d][ro][0]/taskset[i].period
-        print(taskset[i].ref_runtime/taskset[i].period)
-        U_tot += util
-    print("total utilization :", U_tot)
-def main(): 
-    solver(gen_taskset(6, 1))
+        energy = taskset[i].perf[f][c][d][ro][1]
 
+        U_tot += util
+        E_tot += energy/taskset[i].period
+        E_ref += taskset[i].ref_energy/taskset[i].period
+    
+    flash_ratio = flash_used/taskset.flash_size
+    ram_ratio =  ram_used/taskset.ram_size
+    ccm_ratio = ccm_used/taskset.ccm_size
+    '''print("total utilization :", U_tot)
+    print("ref utilization: ", taskset.u_tot )
+    print("total energy : ", E_tot)
+    print("ref energy : ", E_ref)
+    print("FLASH : {}%, SRAM : {}%, CCM : {}%".format(
+       flash_ratio ,ram_ratio,ccm_ratio 
+    ))'''
+    U_gain = (taskset.u_tot - U_tot)/taskset.u_tot
+    E_gain = (E_ref-E_tot)/E_ref
+    
+    return((U_gain, E_gain, flash_ratio, ram_ratio, ccm_ratio, error))
+def main(): 
+    dico = gen_dictionnary("./bench")
+    #U_gains E_gains flash_ratios ram_ratios ccm_ratios
+    data = [[],[],[],[],[]]
+    task_dico = {"8" : data.copy(), "16" :data.copy(), "32" : data.copy(), "64" : data.copy(),}
+    avrg_dico = {"8": np.zeros(5), "16" : np.zeros(5), "32": np.zeros(5), "64":np.zeros(5) }
+    for n in [8,16,32,64] : 
+        for i in range(100): 
+            os.system('cls')
+            print(n, " tasks :", i,"%")
+            (U_gain, E_gain, flash_ratio, ram_ratio, ccm_ratio, error) = solver(gen_taskset(n, 1, dico, 256000, 40000, 8000))
+            if not error : 
+                task_dico[str(n)][0].append(U_gain)    
+                task_dico[str(n)][1].append(E_gain)
+                task_dico[str(n)][2].append(flash_ratio)
+                task_dico[str(n)][3].append(ram_ratio)
+                task_dico[str(n)][4].append(ccm_ratio)
+        for j in range(5) : 
+            avrg_dico[str(n)][j] =  np.mean(task_dico[str(n)][j])
+    print(avrg_dico)
 main()

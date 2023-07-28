@@ -234,6 +234,83 @@ With the $(1+w)$ factor the intensity growth has to be even more small between
 frequencies. With $f_2 = 72 MHz, f_1 = 24 MHz$ and $w = 0.4$ the intensity ratio
 has to be inferior to 2.14 to do not have energy increase. With no wait states it would be 3.
 
+\section{Optimization algorithm}
+
+With $P\,=\,\{F,C\}$ the program allocation (FLASH or CCM)\\
+$D\,=\,\{R\}$ the input data allocation (SRAM)\\
+$Ro\,=\,\{F,R,C\}$ the read only data allocation (FLASH, SRAM or CCM)\\
+$Freq\,=\,\{24,48,72\}$ the possible frequencies\\
+$M^F$, $M^C$, $M^R$, respectively the FLASH, CCM and RAM capacities \\
+$\tau_i$ the task $i$ with $i \, \in \mathbb{N}$\\
+$n$ the number of task\\
+$T_i$ the period of $\tau_i$\\
+$m_i^p,\, m_i^d,\, m_i^{ro}$ the size of the program, input data and read only
+data of $\tau_i$ \\
+$x_i^{p,d,ro,f}$the configuration decision for $\tau_i$\\
+$\exists!(p,d,ro,f)\,\in\,P \times D \times Ro \times Freq \quad
+x_i^{p,d,ro,f}\,=\,1\quad \forall i \in 1,\ldots,n$\\
+$x_i^{p,d,ro,f}\,=\,1$ when $\tau_i$'s : 
+\begin{itemize}
+    \item program is in $p$ 
+    \item input data in $d$
+    \item read only data in $ro$
+    \item clock frequency is $f$
+\end{itemize}
+For example : $x_2^{F,C,R,72}$ is the configuration where the task 2 is executed
+at 72MHz with instruction in FLASH, input data in CCM and read only in RAM \\
+
+To simplify the system we note $\mathcal{C} \, = \, P \times D \times Ro \times
+Freq$ the configuration set.\\
+Then we use $x_i^c\,\equiv\, x_i^{p,d,ro,f}\quad c\ \in \ \mathcal{C}$\\
+$({p},{d},{f})\,\in\,\mathcal{C}\backslash{Ro}$ corresponding to the situation
+where the read only data location is fixed. We will
+iterate only on the other parameters of the task.\\
+In that way $x_i^{{p},{d},{F},{f}}$ means that we only check configuration where
+read only data is in the FLASH.
+
+
+
+
+\begin{flalign*}
+    &\text{min.} \quad
+    \sum_{i=1}^n \left(\sum_{{c}\,\in\,\mathcal{C}} {\frac{E_i^{{c}}}{T_i} \cdot x^{{c}}_i}\right)\\
+    &\text{Minimize the periodic energy}\\
+    &\textbf{Constraint 1}\\
+    &\sum_{{c}\,\in\,\mathcal{C}}{x^{{c}}_i} = 1 \quad \forall{i \in {1},\ldots,{n}}\\
+    &\text{There is only one used configuration for a task i}\\
+    &\textbf{Constraint 2}\\
+    &\sum_{i=1}^n\sum_{{c} \in \mathcal{C}}{U_i^{{c}} \cdot x_i^{{c}}} \leq 1 \\
+    &\text{The system has to remain schedulable over EDF}\\
+    &\textbf{Constraint 3}\\
+    &\sum_{i=1}^n \left(\sum_{({d},{ro},{f})\,\in\,\mathcal{C} \backslash {P}}
+    {\left(x_i^{{F},{d},{ro},{f}} \cdot m_i^P \right)}
+    \quad{+}\sum_{({p},{d},{f})\,\in\,\mathcal{C}\backslash{Ro}}
+    {\left(x_i^{{p},{d},{F},{f}} \cdot m_i^{Ro} \right)}\right) \leq M^{Flash}\\
+    &\text{We can put instructions and read only data in the FLASH memory.}\\
+    &\text{The total size must not exceed the memory space}\\
+    &\textbf{Constraint 4}\\
+    &\sum_{i=1}^n \left(\sum_{({p},{ro},{f})\,\in\,\mathcal{C} \backslash {D}}
+    {\left(x_i^{{p},{R},{ro},{f}} \cdot m_i^D \right)}
+    \quad{+}\sum_{({p},{d},{f})\,\in\,\mathcal{C}\backslash{Ro}}
+    {\left(x_i^{{p},{d},{F},{f}} \cdot m_i^{Ro} \right)}\right) \leq M^{RAM}\\
+\end{flalign*}
+We can put read only data and input data inside the SRAM. Even if
+normally the space dedicated to function and input data is allocated
+automatically we decided to set the space for this data. Because in
+the worst case, a task can be preempted by all the other tasks, it can
+imply memory issues if the space used by all task is greater than the
+SRAM capacity.
+\begin{flalign*}
+    &\textbf{Constraint 5}\\
+    &\sum_{i=1}^n \left(\sum_{({d},{ro},{f})\,\in\,\mathcal{C} \backslash {P}}
+    {\left(x_i^{{C},{d},{ro},{f}} \cdot m_i^P \right)}
+    \quad{+}\sum_{({p},{d},{f})\,\in\,\mathcal{C}\backslash{Ro}}
+    {\left(x_i^{{p},{d},{C},{f}} \cdot m_i^{Ro} \right)}\right) \leq M^{C}\\ 
+\end{flalign*}
+We can have instructions or read only data inside the CCM. Actually, it is
+possible to have input data inside. However, this data is often gotten from other
+components (ex : signal received from a sensor for the FFT). Move this data from
+SRAM to CCM would add an extra step and would imply slight changes 
 
 \bibliographystyle{unsrt}
 \bibliography{bibliography}

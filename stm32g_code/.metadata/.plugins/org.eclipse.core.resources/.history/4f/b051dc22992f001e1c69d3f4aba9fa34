@@ -1,0 +1,18 @@
+/*
+ * FFT.h
+ *
+ *  Created on: 31 juil. 2023
+ *      Author: loict
+ */
+
+#ifndef INC_FFT_H_
+#define INC_FFT_H_
+
+#define NUMBER_OF_BITS 13    /* fract format 1.NUMBER_OF_BITS = 1.13 */
+
+#define BITS_PER_TWID 13     /* bits per twiddle coefficient */
+#define SHIFT BITS_PER_TWID  /* fractional shift after each multiplication */
+//#define INPUT_DATA_ON_CCM
+//#define DATA_ON_CCM
+
+#endif /* INC_FFT_H_ */

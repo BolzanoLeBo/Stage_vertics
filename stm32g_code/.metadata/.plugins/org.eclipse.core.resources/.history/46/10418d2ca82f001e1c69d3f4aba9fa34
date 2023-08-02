@@ -1,0 +1,17 @@
+/*
+ * RSA_enc.c
+ *
+ *  Created on: 31 juil. 2023
+ *      Author: loict
+ */
+
+
+#include "RSA_enc.h"
+
+char plaintext[SIZE]="To be, or not to be, that is the question: Whether tis nobler in the mind to suffer The slings and a"
+"To be, or not to be, that is the question: Whether tis nobler in the mind to suffer The slings and a"
+"To be, or not to be, that is the question: Whether tis nobler in the mind to suffer The slings and a"
+"To be, or not to be, that is the question: Whether tis nobler in the mind to suffer The slings and a"
+"To be, or not to be, that is the question: Whether tis nobler in the mind to suffer The slings and a";
+
+int c[SIZE];

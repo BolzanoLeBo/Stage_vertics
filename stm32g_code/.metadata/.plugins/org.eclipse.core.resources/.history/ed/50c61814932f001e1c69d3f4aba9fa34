@@ -1,0 +1,25 @@
+/*
+ * bubble_sort.h
+ *
+ *  Created on: 31 juil. 2023
+ *      Author: loict
+ */
+
+#ifndef INC_BUBBLE_SORT_H_
+#define INC_BUBBLE_SORT_H_
+
+#define FALSE 0
+#define TRUE 1
+#define NUMELEMS 1000  // Defines how much elements will be sorted
+#define MAXDIM   (NUMELEMS+1)
+
+
+__attribute__((section(".data")))
+int srcArrayInRAM[NUMELEMS];
+
+__attribute__((section(".ccmram")))
+void BubbleSortCCM(int Array[]);
+
+void BubbleSort(int Array[]);
+
+#endif /* INC_BUBBLE_SORT_H_ */

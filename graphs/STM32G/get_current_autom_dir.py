@@ -110,7 +110,15 @@ def get_current(data_i, data_t,param_col,i_t,t_t) :
 			tab_i = [intensity_tab[i] for i in range (len(intensity_tab)) if i % nb_ex == n]
 			tab_d = [duration_tab[i] for i in range (len(duration_tab)) if i % nb_ex == n]
 			tab_t = [time_tab[i] for i in range (len(time_tab)) if i % nb_ex == n]
-			tab_e = [3.3*tab_d[i]*tab_i[i] for i in range (len(tab_i))]
+			tab_e = []
+			#print(len(tab_d))
+			for i in range (len(f)) : 
+				if "RANGE2" in f[i]:
+					tab_e.append(1.0*tab_d[i]*tab_i[i])
+				elif "BOOST" in f[i] : 
+					tab_e.append(1.28*tab_d[i]*tab_i[i])
+				else : 
+					tab_e.append(1.2*tab_d[i]*tab_i[i])
 			df.append(pd.DataFrame([tab_i, tab_d, tab_t, tab_e], index = row, columns = f))
 
 	return (df, ex)
@@ -122,8 +130,8 @@ def main() :
 	rep_name = sys.argv[1]
 	param_col = sys.argv[2]
 	if len(sys.argv) > 3 : 
-		i_treshold = sys.argv[3]
-		t_treshold = sys.argv[4]
+		i_treshold = float(sys.argv[3])
+		t_treshold = float(sys.argv[4])
 	else :
 		i_treshold = 2000
 		t_treshold = 0.001
@@ -150,7 +158,10 @@ def main() :
 
 		(df, ex) = get_current(intensity[i], time[i], param_col, i_treshold, t_treshold)
 		for j in range(len(ex)) : 
-			sheet = "{} {}".format(graph[i].removesuffix(".stpm"), ex[j])
+			if len(intensity) == 1 :
+				sheet = "{}".format(ex[j])
+			else : 
+				sheet = "{}-{}".format(graph[i].removesuffix(".stpm"),ex[j])
 			print("creating the sheet : ", sheet)
 			df[j].to_csv(rep_name+'/'+sheet+'.csv', sep='\t')
 			try :

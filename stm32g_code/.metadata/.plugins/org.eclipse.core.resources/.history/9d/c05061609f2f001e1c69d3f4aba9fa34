@@ -1,0 +1,27 @@
+/*
+ * pointer_chase.c
+ *
+ *  Created on: 31 juil. 2023
+ *      Author: loict
+ */
+#include "pointer_chase.h"
+
+void pointer_chase_flash(void ** p0){
+
+    void **this_pp = p0;
+    for(int i = 0;i<1000;i++){
+      while(this_pp){
+        this_pp = *this_pp;
+      }
+      this_pp = p0;
+    }
+
+void pointer_chase_ccm(void ** p0){
+
+    void **this_pp = p0;
+    for(int i = 0;i<1000;i++){
+      while(this_pp){
+        this_pp = *this_pp;
+      }
+      this_pp = p0;
+    }

@@ -1,0 +1,15 @@
+/*
+ * pointer_cahse.h
+ *
+ *  Created on: 31 juil. 2023
+ *      Author: loict
+ */
+
+#ifndef INC_POINTER_CHASE_H_
+#define INC_POINTER_CHASE_H_
+
+void pointer_chase_flash(void ** p0);
+
+void pointer_chase_ccm(void ** p0) __attribute__((section(".ccmram"))) ;
+
+#endif /* INC_POINTER_CHASE_H_ */

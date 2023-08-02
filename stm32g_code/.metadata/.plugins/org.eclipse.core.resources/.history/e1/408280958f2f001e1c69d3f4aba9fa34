@@ -1,0 +1,16 @@
+/*
+ * sine.h
+ *
+ *  Created on: 31 juil. 2023
+ *      Author: loict
+ */
+
+#ifndef INC_SINE_H_
+#define INC_SINE_H_
+
+__attribute__((section(".ccmram")))
+void computeArraySin_ccm(float * arr_input, float * arr_keys , float * arr_values, int n_lut, int n_input);
+void computeArraySin(float * arr_input, float * arr_keys , float * arr_values, int n_lut, int n_input);
+
+void sine_main();
+#endif /* INC_SINE_H_ */

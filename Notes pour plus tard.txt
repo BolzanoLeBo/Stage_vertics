@@ -19,4 +19,6 @@ problème si chaques instructions demanent une lecture ?
 
 Même si à basse fréquence l'amélioration par rapport à la flash est meilleure qu'à haute fréquences, peut être qu'il faut comparer aussi les fréquences entre elles ? 
 
+
+temps pour changer de clock 0.00045 s ou 3600 clock tick 
  

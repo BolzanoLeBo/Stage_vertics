@@ -1,3 +1,0 @@
-"""
-schedcat.util: misc. helpers
-"""

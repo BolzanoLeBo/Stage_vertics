@@ -3,7 +3,8 @@ import gurobipy as gp
 from gurobipy import GRB
 
 from multiprocessing import Pool
-
+from csv import writer
+import os
 
 def solver(taskset) : 
     n = len(taskset)
@@ -166,15 +167,15 @@ def solver(taskset) :
             if x_f_sol[i,j] > 1-1e-6 : 
                 x_index[0] = j
                 if x_p_sol[i,1]> 1-1e-6 : 
-                    if f_str[j] in f_ccm : 
-                        f_ccm[f_str[j]] += 1
+                    if f_str[j]+"c" in f_ccm : 
+                        f_ccm[f_str[j]+"c"] += 1
                     else : 
-                        f_ccm[f_str[j]] = 1
+                        f_ccm[f_str[j]+"c"] = 1
                 elif x_p_sol[i,0] >1-1e-6  : 
-                    if f_str[j] in f_flash : 
-                        f_flash[f_str[j]] += 1
+                    if f_str[j]+"f" in f_flash : 
+                        f_flash[f_str[j]+"f"] += 1
                     else : 
-                        f_flash[f_str[j]] = 1
+                        f_flash[f_str[j]+"f"] = 1
 
                 
             if j < 2 : 
@@ -221,15 +222,32 @@ def solver(taskset) :
     U_gain = float((taskset.u_tot - U_tot)/taskset.u_tot)
     E_gain = (E_ref-E_tot)/E_ref
     for key in f_str : 
+        keyc = key+"c"
+        keyf = key+"f"
         if key in f_ccm :
-            f_ccm[key] = f_ccm[key]/n
+            f_ccm[keyc] = f_ccm[keyc]/n
         else : 
-            f_ccm[key] = 0
-        if key in f_flash :
-            f_flash[key] = f_flash[key]/n
+            f_ccm[keyc] = 0
+        if key+"f" in f_flash :
+            f_flash[keyf] = f_flash[keyf]/n
         else : 
-            f_flash[key] = 0
+            f_flash[keyf] = 0
     #print(f_ccm)
     #print(f_flash)
+
+    res = [U_gain, E_gain]+list(f_ccm.values())+list(f_flash.values())
+    round_res = [round(r,2) for r in res]
+    f_exists = os.path.exists('results/res{}g.csv'.format(n))
+    with open('results/res{}g.csv'.format(n), 'a') as file:
+        w = writer(file,delimiter="\t" )
+        if not f_exists : 
+            w.writerow(["U_gain", "E_gain"]+list(f_ccm.keys())+list(f_flash.keys()))
+        w.writerow(res)
+    f_exists = os.path.exists('results/round_res{}g.csv'.format(n))
+    with open('results/round_res{}g.csv'.format(n), 'a') as file:
+        w = writer(file,delimiter="\t" )
+        if not f_exists : 
+            w.writerow(["U_gain", "E_gain"]+list(f_ccm.keys())+list(f_flash.keys()))
+        w.writerow(round_res)
     return(U_gain, E_gain, f_ccm, f_flash)
 

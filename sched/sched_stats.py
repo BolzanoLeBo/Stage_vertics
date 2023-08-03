@@ -10,8 +10,8 @@ import os
 def main() : 
     dicog = gg.gen_dictionnary("./sched_32g/bench")
     dicof = gf.gen_dictionnary("./sched_32f/bench")
-    proc_test = 'f'
-    Ntests = 1
+    proc_test = 'g'
+    Ntests = 2
     nb_tasks = [8,16]
     res_dico = {}
     pattern_init = 0
@@ -19,8 +19,7 @@ def main() :
 
     for ni in nb_tasks :
         n = str(ni) 
-        count_var = 0
-        count_dico = 0
+
         for i in range(Ntests):
             if proc_test == 'g' : 
                 res = mg.solver(gg.gen_taskset(ni,1, dicog, 256000, 40000, 8000))
@@ -53,10 +52,14 @@ def main() :
                         for key in res[j].keys() : 
                             res_dico[n][j][key] += res[j][key]
             if i*100/Ntests%10 == 0 : 
-                #os.system('cls')
+                os.system('cls')
                 print(n, " tasks :", int(i*100/Ntests),"%")
-
-        #average the results 
+    #average the results 
+    for ni in nb_tasks :
+        n = str(ni) 
+        print("\n task ", n)
+        count_var = 0
+        count_dico = 0
         for j in range (len(res_dico[n])):
             if type(res_dico[n][j]) is int or type(res_dico[n][j]) is float: 
                 res_dico[n][j] = round(res_dico[n][j]/Ntests,2)

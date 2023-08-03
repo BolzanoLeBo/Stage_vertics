@@ -1,0 +1,17 @@
+09:53:26 **** Incremental Build of configuration Release for project test_32g_change ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test_32g_change.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\loict\Desktop\Stage_vertics\stm32g_code\test_32g_change\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_32g_change.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_32g_change.elf
+ 
+arm-none-eabi-size   test_32g_change.elf 
+arm-none-eabi-objdump -h -S  test_32g_change.elf  > "test_32g_change.list"
+   text	   data	    bss	    dec	    hex	filename
+   6488	   3620	  18108	  28216	   6e38	test_32g_change.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_32g_change.list
+ 
+
+09:53:27 Build Finished. 0 errors, 0 warnings. (took 826ms)
+

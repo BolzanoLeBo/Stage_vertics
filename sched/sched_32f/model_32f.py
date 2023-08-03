@@ -1,10 +1,10 @@
 
 import gurobipy as gp
 from gurobipy import GRB
-
-
+from csv import writer
+import os
 from multiprocessing import Pool
-
+from copy import deepcopy
 
 def solver(taskset) : 
     n = len(taskset)
@@ -206,5 +206,18 @@ def solver(taskset) :
             f_flash[key] = f_flash[key]/n
         else : 
             f_flash[key] = 0
-
+    res = [U_gain, E_gain, flash_ratio, ram_ratio, ccm_ratio]+list(f_ccm.values())+list(f_flash.values())
+    round_res = [round(r,2) for r in res]
+    f_exists = os.path.exists('results/res{}f.csv'.format(n))
+    with open('results/res{}f.csv'.format(n), 'a') as file:
+        w = writer(file,delimiter="\t" )
+        if not f_exists : 
+            w.writerow(["U_gain", "E_gain", "flash_ratio", "ram_ratio", "ccm_ratio"]+list(f_ccm.keys())+list(f_flash.keys()))
+        w.writerow(res)
+    f_exists = os.path.exists('results/round_res{}f.csv'.format(n))
+    with open('results/round_res{}f.csv'.format(n), 'a') as file:
+        w = writer(file,delimiter="\t" )
+        if not f_exists : 
+            w.writerow(["U_gain", "E_gain", "f_rat", "r_rat", "c_rat"]+list(f_ccm.keys())+list(f_flash.keys()))
+        w.writerow(round_res)
     return(U_gain, E_gain, flash_ratio, ram_ratio, ccm_ratio, f_ccm, f_flash)

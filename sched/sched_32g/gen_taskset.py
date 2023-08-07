@@ -231,6 +231,7 @@ def gen_taskset(nb_tasks, util, dico_f, size_flash, size_ram, size_ccm):
         
         #init all the tasks info
         perf = []
+        perf2 = []
         for f in range (len(freqs)) : 
             perf.append([])
             for c in range (len(c_index)) :
@@ -249,9 +250,12 @@ def gen_taskset(nb_tasks, util, dico_f, size_flash, size_ram, size_ccm):
                             runtime2 =  int(runtime1*scale_runtime)
                             energy2 = int(energy1*runtime2/runtime1)
                             perf[f][c][prec].append([runtime2,energy2])  
+                            perf2.append([runtime2,energy2])  
                         else: 
-                            perf[f][c][prec].append([MAX,MAX])              
+                            perf[f][c][prec].append([MAX,MAX])      
+                            perf2.append([MAX, MAX])                
         task.perf = perf
+        task.perf2 = perf2
         taskset.append(task)
         data_size += size_d[task.name]
 

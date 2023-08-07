@@ -1,6 +1,9 @@
 from sched_32f import model_32f2 as mf2
 from sched_32f import model_32f3 as mf3
 from sched_32f import model_32f as mf
+
+from sched_32g import model_32g2 as mg2
+from sched_32g import model_32g3 as mg3
 from sched_32g import model_32g as mg
 
 from sched_32g import gen_taskset as gg
@@ -12,8 +15,8 @@ import os
 def main() : 
     dicog = gg.gen_dictionnary("./sched_32g/bench")
     dicof = gf.gen_dictionnary("./sched_32f/bench")
-    proc_test = 'f'
-    Ntests = 1
+    proc_test = 'g'
+    Ntests = 50
     nb_tasks = [16]
     res_dico = {}
     pattern_init = 0
@@ -23,10 +26,17 @@ def main() :
         n = str(ni) 
 
         for i in range(Ntests):
-            if proc_test == 'g' : 
-                res = mg.solver(gg.gen_taskset(ni,1, dicog, 256000, 40000, 8000))
+            if proc_test == 'g' :
+                taskset = gg.gen_taskset(ni,1, dicog, 256000, 40000, 8000) 
+                res = mg.solver(taskset)
+                res2 = mg2.solver(taskset)
+                res3 = mg3.solver(taskset)
+                if (res != res2 or res3 != res ) :
+                    print("res1 :", res)
+                    print("res2 :", res)
+                    print("res3 :", res3)
             else : 
-                taskset = gf.gen_taskset(ni,1, dicof, 256000, 40000, 8000)
+                
                 
                 res = mf.solver(taskset)
                 res2 = mf2.solver(taskset)
@@ -34,7 +44,7 @@ def main() :
                 print("res1 :", res)
                 print("res2 :", res2)
                 print("res3 :", res3)
-            '''if not pattern_init : 
+            if not pattern_init : 
                 #init of the res_pattern
                 for j in range(len(res)) : 
                     
@@ -79,6 +89,6 @@ def main() :
                 for key in res[j].keys() : 
                     res_dico[n][j][key] = round(res_dico[n][j][key]/Ntests, 2)
                     if res_dico[n][j][key] > 0 : 
-                        print(key, ":", res_dico[n][j][key])'''
+                        print(key, ":", res_dico[n][j][key])
 
 main()

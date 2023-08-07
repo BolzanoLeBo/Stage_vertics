@@ -29,6 +29,14 @@ def solver(taskset) :
     for i in range(4) : 
         mulcro.append(model.addVars(n,4,vtype = GRB.BINARY))
 
+    mulfinal = []
+    for f in range(12) :
+        mulfinal.append([])
+        for p in range(2) : 
+            mulfinal[f].append([])
+            for prec in range(4) :
+                mulfinal[f][p].append(model.addVars(n,4,vtype = GRB.BINARY)) 
+
     '''
         x_f : 
         100 000 000 000 16 range 2 
@@ -89,39 +97,74 @@ def solver(taskset) :
                                 #+ taskset[i].size_d * x_d[i,1]
                                 for i in range(n)) <= taskset.ram_size)
     
-    #we cannot multiply more than 3 elements so we do pre-mutliplication
-    model.addConstrs(mulfp[f][i,p] == x_f[i,f]*x_p[i,p] 
+    #we cannot multiply more than 3 elements so we do pre_operations
+    model.addConstrs(mulfp[f][i,p] <= x_f[i,f]
+                     for i in range(n)
+                     for f in range(12)
+                     for p in range(2))
+    model.addConstrs(mulfp[f][i,p] <= x_p[i,p]
+                     for i in range(n)
+                     for f in range(12)
+                     for p in range(2))
+    model.addConstrs(mulfp[f][i,p] >= x_f[i,f] + x_p[i,p] -1
+                     for i in range(n)
+                     for f in range(12)
+                     for p in range(2))
+    
+    
+    model.addConstrs(mulcro[prec][i,ro] <= x_prec[i,prec]
                   for i in range (n) 
-                  for f in range (12)
-                  for p in range (2))
+                  for prec in range (4)
+                  for ro in range (4))
+    model.addConstrs(mulcro[prec][i,ro] <= x_ro[i,ro]
+                  for i in range (n) 
+                  for prec in range (4)
+                  for ro in range (4))
+    model.addConstrs(mulcro[prec][i,ro] >= x_prec[i,prec] + x_ro[i,ro] -1
+                  for i in range (n) 
+                  for prec in range (4)
+                  for ro in range (4))
     
 
-    model.addConstrs(mulcro[c][i,ro] == x_prec[i,c]*x_ro[i,ro] 
-                  for i in range (n) 
-                  for c in range (4)
-                  for ro in range (4))
-
-
-    model.addConstr(gp.quicksum((taskset[i].perf[f][p][c][ro][0]/taskset[i].period)
-                                 *mulfp[f][i,p]*mulcro[c][i,ro]
+    model.addConstrs(mulfinal[f][p][prec][i,ro] <= mulcro[prec][i, ro]
+                    for f in range(12) 
+                    for p in range(2) 
+                    for prec in range(4) 
+                    for ro in range(4) 
+                    for i in range (n))
+    
+    model.addConstrs(mulfinal[f][p][prec][i,ro] <= mulfp[f][i, p]
+                    for f in range(12) 
+                    for p in range(2) 
+                    for prec in range(4) 
+                    for ro in range(4) 
+                    for i in range (n))
+    
+    model.addConstrs(mulfinal[f][p][prec][i,ro] >= mulcro[prec][i,ro] + mulfp[f][i,p] - 1
+                    for f in range(12) 
+                    for p in range(2) 
+                    for prec in range(4) 
+                    for ro in range(4) 
+                    for i in range (n))
+    
+    #utilization less than 1 
+    model.addConstr(gp.quicksum((taskset[i].perf[f][p][prec][ro][0]/taskset[i].period)
+                                 *mulfinal[f][p][prec][i,ro]
                 for f in range(12) 
                 for p in range(2) 
-                for c in range(4)
-                for ro in range(4)
+                for prec in range(4) 
+                for ro in range(4) 
                 for i in range (n)
                 ) <= 1 )
 
     #minimize the energy
     model.setObjective(
-    gp.quicksum(((taskset[i].perf[f][p][c][ro][1]/taskset[i].period)
-                 *mulfp[f][i,p]*mulcro[c][i,ro] )  
+    gp.quicksum((taskset[i].perf[f][p][prec][ro][1]/taskset[i].period)*mulfinal[f][p][prec][i,ro]
                 for f in range(12) 
-                for p in range(2)  
-                for c in range(4)
+                for p in range(2) 
+                for prec in range(4) 
                 for ro in range(4) 
                 for i in range (n))
-
-
     ,
     GRB.MINIMIZE)
 

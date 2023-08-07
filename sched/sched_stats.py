@@ -17,7 +17,7 @@ def main() :
     dicof = gf.gen_dictionnary("./sched_32f/bench")
     proc_test = 'g'
     Ntests = 50
-    nb_tasks = [16]
+    nb_tasks = [8,16,32,64,132]
     res_dico = {}
     pattern_init = 0
     res_pattern = []
@@ -28,22 +28,12 @@ def main() :
         for i in range(Ntests):
             if proc_test == 'g' :
                 taskset = gg.gen_taskset(ni,1, dicog, 256000, 40000, 8000) 
-                res = mg.solver(taskset)
-                res2 = mg2.solver(taskset)
-                res3 = mg3.solver(taskset)
-                if (res != res2 or res3 != res ) :
-                    print("res1 :", res)
-                    print("res2 :", res)
-                    print("res3 :", res3)
+                res = mg2.solver(taskset)
+
             else : 
-                
-                
-                res = mf.solver(taskset)
-                res2 = mf2.solver(taskset)
-                res3 = mf3.solver(taskset)
-                print("res1 :", res)
-                print("res2 :", res2)
-                print("res3 :", res3)
+                taskset = gf.gen_taskset(ni,1, dicof, 256000, 40000, 8000) 
+                res = mf2.solver(taskset)
+
             if not pattern_init : 
                 #init of the res_pattern
                 for j in range(len(res)) : 
@@ -70,7 +60,7 @@ def main() :
                         for key in res[j].keys() : 
                             res_dico[n][j][key] += res[j][key]
             if i*100/Ntests%10 == 0 : 
-                #os.system('cls')
+                os.system('cls')
                 print(n, " tasks :", int(i*100/Ntests),"%")
     #average the results 
     for ni in nb_tasks :

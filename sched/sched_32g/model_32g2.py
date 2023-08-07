@@ -90,7 +90,7 @@ def solver(taskset) :
     end_time = time.perf_counter()
     run_time = end_time - start_time
 
-    print("times : ", create_time, run_time)
+    #print("times : ", create_time, run_time)
 
     
     if model.Status == GRB.INF_OR_UNBD:

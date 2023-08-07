@@ -1,6 +1,6 @@
+CACHE_ON-PRE_ON
 NORMAL
-CODE_CCM
 energy
-150 150_BOOST 170 170_BOOST
-code_ccm_boost
+30 60 90 120 150
+pre_fetch
 ro

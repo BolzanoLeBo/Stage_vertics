@@ -5,8 +5,9 @@ from csv import writer
 import os
 from multiprocessing import Pool
 from copy import deepcopy
-
+import time
 def solver(taskset) : 
+    start_time = time.perf_counter()
     n = len(taskset)
     
     model = gp.Model("ilp_ram_allocator")
@@ -59,7 +60,7 @@ def solver(taskset) :
     #FLASH size constraint
     #we can have instruction or ro data
     model.addConstr(gp.quicksum((taskset[i].size_i * x_p[i,0] + 
-                                taskset[i].size_ro * x_ro[i,1]) 
+                                taskset[i].size_ro * x_ro[i,1])
                                 for i in range(n)) <= taskset.flash_size)
     #CCM size constraint
     #we can have instruction or ro data
@@ -95,7 +96,7 @@ def solver(taskset) :
 
     #minimize the energy
     model.setObjective(
-    gp.quicksum((taskset[i].perf[f][p][d][ro][1]*mulfc[f][i,p]*muldro[d][i,ro])  
+    gp.quicksum(((taskset[i].perf[f][p][d][ro][1]/taskset[i].period)*mulfc[f][i,p]*muldro[d][i,ro])  
                 for f in range(3) 
                 for p in range(2) 
                 for d in range(2) 
@@ -103,10 +104,15 @@ def solver(taskset) :
                 for i in range (n))
     ,
     GRB.MINIMIZE)
+    end_time = time.perf_counter()
+    create_time = end_time - start_time 
 
-
+    start_time = time.perf_counter()
     model.optimize()
-    
+    end_time = time.perf_counter()
+    run_time = end_time - start_time
+
+    print("times : ", create_time, run_time)
     if model.Status == GRB.INF_OR_UNBD:
         raise Exception('Model is infeasible or unbounded')
     elif model.Status == GRB.INFEASIBLE:
@@ -177,7 +183,8 @@ def solver(taskset) :
                     ram_used += taskset[i].size_ro
                 elif j == 3 :
                     ccm_used += taskset[i].size_ro 
-        f, c, d, ro = x_index      
+        f, c, d, ro = x_index     
+        #x2 = f*16 + c*8 + d*4 + ro*1
         #print(taskset[i].name," : ", f_str[f]," | ",c_str[c]," | ", d_str[d]," | ",ro_str[ro])
         #in the case where an unexistant config is taken 
         if taskset[i].perf[f][c][d][ro][0] > 8000 :

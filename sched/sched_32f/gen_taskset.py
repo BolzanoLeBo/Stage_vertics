@@ -199,9 +199,6 @@ def gen_taskset(nb_tasks, util, dico_f, size_flash, size_ram, size_ccm):
         task.ref_energy = ref_energy
         task.name = task_name
 
-        '''task.size_i = size_i[task_name]
-        task.size_d = size_d[task_name]
-        task.size_ro = size_ro[task_name]'''
         task.size_i = randint(min(size_i.values()), max(size_i.values()))
         if task_name not in only_ro_codes : 
             task.size_d = randint(min(size_d.values()), max(size_d.values()))
@@ -219,6 +216,7 @@ def gen_taskset(nb_tasks, util, dico_f, size_flash, size_ram, size_ccm):
         
         #init all the tasks info
         perf = []
+        perf2 = []
         for f in range (len(freqs)) : 
             perf.append([])
             for c in range (len(c_index)) :
@@ -232,9 +230,14 @@ def gen_taskset(nb_tasks, util, dico_f, size_flash, size_ram, size_ccm):
                             runtime2 =  int(runtime1*scale_runtime)
                             energy2 = int(energy1*runtime2/runtime1)
                             perf[f][c][d].append([runtime2,energy2])  
+                            perf2.append([runtime2,energy2])  
                         else: 
-                            perf[f][c][d].append([MAX,MAX])              
+                            perf[f][c][d].append([MAX,MAX])      
+                            perf2.append([MAX, MAX])        
         task.perf = perf
+        task.perf2 = perf2
+
+        
         taskset.append(task)
         data_size += size_d[task.name]
     taskset.assign_ids_by_deadline()
@@ -247,6 +250,6 @@ def gen_taskset(nb_tasks, util, dico_f, size_flash, size_ram, size_ccm):
     #print(taskset)
     #print(data_size)
     #print(taskset[0].name, taskset[0].perf)
-
+    
     return(taskset)
 

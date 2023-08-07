@@ -5,19 +5,18 @@ from gurobipy import GRB
 from multiprocessing import Pool
 from csv import writer
 import os
-
+import time
 def solver(taskset) : 
     n = len(taskset)
-    
+    start_time = time.perf_counter()
+
     model = gp.Model("ilp_ram_allocator")
-    model.setParam('OutputFlag', 0)
+    #model.setParam('OutputFlag', 0)
     model.setParam('TimeLimit', 3600)
     model.setParam('Threads', 1)
 
     x_f = model.addVars(n,12, vtype = GRB.BINARY)
     x_p = model.addVars(n,2, vtype = GRB.BINARY)
-    x_pre = model.addVars(n,2, vtype = GRB.BINARY)
-    x_c = model.addVars(n,2, vtype = GRB.BINARY)
     x_ro = model.addVars(n,4, vtype = GRB.BINARY)
 
     x_prec = model.addVars(n,4, vtype = GRB.BINARY)
@@ -126,7 +125,15 @@ def solver(taskset) :
     ,
     GRB.MINIMIZE)
 
+    end_time = time.perf_counter()
+    create_time = end_time - start_time 
+
+    start_time = time.perf_counter()
     model.optimize()
+    end_time = time.perf_counter()
+    run_time = end_time - start_time
+
+    print("times : ", create_time, run_time)
 
     
     if model.Status == GRB.INF_OR_UNBD:

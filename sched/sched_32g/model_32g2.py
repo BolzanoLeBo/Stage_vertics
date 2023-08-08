@@ -176,7 +176,7 @@ def solver(taskset) :
     #calculate the utilization gain and energy gain
     U_gain = float((taskset.u_tot - U_tot)/taskset.u_tot)
     E_gain = (E_ref-E_tot)/E_ref
-
+    
     for key in f_str : 
         keyc = key+"c"
         keyf = key+"f"
@@ -192,17 +192,11 @@ def solver(taskset) :
 
     res = [U_gain, E_gain]+list(f_ccm.values())+list(f_flash.values())
     round_res = [round(r,2) for r in res]
-    f_exists = os.path.exists('results/res{}g.csv'.format(n))
-    with open('results/res{}g.csv'.format(n), 'a') as file:
+    f_exists = os.path.exists('results/stm32g/{}.csv'.format(n))
+    with open('results/stm32g/{}.csv'.format(n), 'a') as file:
         w = writer(file,delimiter="\t" )
         if not f_exists : 
             w.writerow(["U_gain", "E_gain"]+list(f_ccm.keys())+list(f_flash.keys()))
         w.writerow(res)
-    f_exists = os.path.exists('results/round_res{}g.csv'.format(n))
-    with open('results/round_res{}g.csv'.format(n), 'a') as file:
-        w = writer(file,delimiter="\t" )
-        if not f_exists : 
-            w.writerow(["U_gain", "E_gain"]+list(f_ccm.keys())+list(f_flash.keys()))
-        w.writerow(round_res)
     return(U_gain, E_gain, f_ccm, f_flash)
 

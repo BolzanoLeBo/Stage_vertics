@@ -75,7 +75,7 @@ def solver(taskset) :
     end_time = time.perf_counter()
     run_time = end_time - start_time
 
-    print("times : ", create_time, run_time)
+    #print("times : ", create_time, run_time)
     if model.Status == GRB.INF_OR_UNBD:
         raise Exception('Model is infeasible or unbounded')
     elif model.Status == GRB.INFEASIBLE:
@@ -123,18 +123,18 @@ def solver(taskset) :
         if config in c_instr_flash : 
             flash_used += taskset[i].size_i
             nb_instr_flash += 1
-            if f_str[f_i] in f_flash : 
-                f_flash[f_str[f_i]] += 1
+            if f_str[f_i]+"f" in f_flash : 
+                f_flash[f_str[f_i]+"f"] += 1
             else : 
-                f_flash[f_str[f_i]] = 1
+                f_flash[f_str[f_i]+"f"] = 1
         #if code in CCM
         elif config in c_instr_ccm: 
             ccm_used += taskset[i].size_i
             nb_instr_ccm += 1 
-            if f_str[f_i] in f_ccm : 
-                f_ccm[f_str[f_i]] += 1
+            if f_str[f_i]+"c" in f_ccm : 
+                f_ccm[f_str[f_i]+"c"] += 1
             else : 
-                f_ccm[f_str[f_i]] = 1
+                f_ccm[f_str[f_i]+"c"] = 1
         #ro configuration
         if config in c_ro_flash: 
             flash_used += taskset[i].size_ro
@@ -165,28 +165,24 @@ def solver(taskset) :
 
 
     for key in f_str : 
-        if key in f_ccm :
-            f_ccm[key] = f_ccm[key]/n
+        keyc = key+"c"
+        keyf = key+"f"
+        if keyc in f_ccm :
+            f_ccm[keyc] = f_ccm[keyc]/n
         else : 
-            f_ccm[key] = 0
-        if key in f_flash :
-            f_flash[key] = f_flash[key]/n
+            f_ccm[keyc] = 0
+        if keyf in f_flash :
+            f_flash[keyf] = f_flash[keyf]/n
         else : 
-            f_flash[key] = 0
+            f_flash[keyf] = 0
     res = [U_gain, E_gain, flash_ratio, ram_ratio, ccm_ratio]+list(f_ccm.values())+list(f_flash.values())
     round_res = [round(r,2) for r in res]
-    f_exists = os.path.exists('results/res{}f.csv'.format(n))
-    with open('results/res{}f.csv'.format(n), 'a') as file:
+    f_exists = os.path.exists('results/stm32f/{}.csv'.format(n))
+    with open('results/stm32f/{}.csv'.format(n), 'a') as file:
         w = writer(file,delimiter="\t" )
         if not f_exists : 
             w.writerow(["U_gain", "E_gain", "flash_ratio", "ram_ratio", "ccm_ratio"]+list(f_ccm.keys())+list(f_flash.keys()))
         w.writerow(res)
-    f_exists = os.path.exists('results/round_res{}f.csv'.format(n))
-    with open('results/round_res{}f.csv'.format(n), 'a') as file:
-        w = writer(file,delimiter="\t" )
-        if not f_exists : 
-            w.writerow(["U_gain", "E_gain", "f_rat", "r_rat", "c_rat"]+list(f_ccm.keys())+list(f_flash.keys()))
-        w.writerow(round_res)
     return(U_gain, E_gain, flash_ratio, ram_ratio, ccm_ratio, f_ccm, f_flash)
     
     
